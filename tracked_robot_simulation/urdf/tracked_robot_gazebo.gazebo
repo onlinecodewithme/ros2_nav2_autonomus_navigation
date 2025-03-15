@@ -6,7 +6,7 @@
   </gazebo>
 
   <gazebo reference="left_track">
-    <material>Gazebo/Black</material>
+    <material>Gazebo/Red</material>
     <mu1>1.0</mu1>
     <mu2>1.0</mu2>
     <kp>500000.0</kp>
@@ -16,7 +16,7 @@
   </gazebo>
 
   <gazebo reference="right_track">
-    <material>Gazebo/Black</material>
+    <material>Gazebo/Green</material>
     <mu1>1.0</mu1>
     <mu2>1.0</mu2>
     <kp>500000.0</kp>
@@ -38,15 +38,32 @@
     <plugin filename="libignition-gazebo-diff-drive-system.so" name="ignition::gazebo::systems::DiffDrive">
       <left_joint>left_track_joint</left_joint>
       <right_joint>right_track_joint</right_joint>
-      <wheel_separation>0.4</wheel_separation>
-      <wheel_radius>0.05</wheel_radius>
+      <wheel_separation>0.46</wheel_separation>
+      <wheel_radius>0.04</wheel_radius>
       <odom_publish_frequency>50</odom_publish_frequency>
-      <topic>cmd_vel</topic>
+      <topic>/cmd_vel</topic>
       <frame_id>odom</frame_id>
       <child_frame_id>base_link</child_frame_id>
       <odom_topic>odom</odom_topic>
       <publish_odom>true</publish_odom>
       <publish_odom_tf>true</publish_odom_tf>
+      <max_linear_velocity>0.26</max_linear_velocity>
+      <min_linear_velocity>-0.26</min_linear_velocity>
+      <max_angular_velocity>1.0</max_angular_velocity>
+      <min_angular_velocity>-1.0</min_angular_velocity>
+      <max_linear_acceleration>2.5</max_linear_acceleration>
+      <min_linear_acceleration>-2.5</min_linear_acceleration>
+      <max_angular_acceleration>3.2</max_angular_acceleration>
+      <min_angular_acceleration>-3.2</min_angular_acceleration>
+    </plugin>
+  </gazebo>
+  
+  <!-- Joint state publisher -->
+  <gazebo>
+    <plugin filename="libignition-gazebo-joint-state-publisher-system.so" name="ignition::gazebo::systems::JointStatePublisher">
+      <joint_name>left_track_joint</joint_name>
+      <joint_name>right_track_joint</joint_name>
+      <update_rate>50</update_rate>
     </plugin>
   </gazebo>
 

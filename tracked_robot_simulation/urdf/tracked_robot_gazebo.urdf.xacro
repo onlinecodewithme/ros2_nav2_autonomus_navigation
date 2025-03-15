@@ -9,9 +9,9 @@
   <xacro:property name="base_length" value="0.5"/>
   <xacro:property name="base_height" value="0.1"/>
   <xacro:property name="wheel_radius" value="0.05"/>
-  <xacro:property name="track_width" value="0.05"/>
+  <xacro:property name="track_width" value="0.08"/>
   <xacro:property name="track_length" value="${base_length}"/>
-  <xacro:property name="track_height" value="0.03"/>
+  <xacro:property name="track_height" value="0.05"/>
   <xacro:property name="wheel_separation" value="${base_width + 2*track_width}"/>
   <xacro:property name="ground_clearance" value="${wheel_radius - track_height/2}"/>
   
@@ -40,16 +40,18 @@
   <link name="left_track">
     <visual>
       <geometry>
-        <box size="${track_length} ${track_width} ${track_height}"/>
+        <cylinder radius="${track_width/2}" length="${track_length}"/>
       </geometry>
-      <material name="black">
-        <color rgba="0.1 0.1 0.1 1"/>
+      <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <box size="${track_length} ${track_width} ${track_height}"/>
+        <cylinder radius="${track_width/2}" length="${track_length}"/>
       </geometry>
+      <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
     </collision>
     <inertial>
       <mass value="1.0"/>
@@ -61,16 +63,18 @@
   <link name="right_track">
     <visual>
       <geometry>
-        <box size="${track_length} ${track_width} ${track_height}"/>
+        <cylinder radius="${track_width/2}" length="${track_length}"/>
       </geometry>
-      <material name="black">
-        <color rgba="0.1 0.1 0.1 1"/>
+      <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+      <material name="green">
+        <color rgba="0.0 1.0 0.0 1"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <box size="${track_length} ${track_width} ${track_height}"/>
+        <cylinder radius="${track_width/2}" length="${track_length}"/>
       </geometry>
+      <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
     </collision>
     <inertial>
       <mass value="1.0"/>

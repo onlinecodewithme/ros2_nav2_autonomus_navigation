@@ -1,0 +1,9 @@
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/uninstall.dir
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/minibot_simulation_uninstall.dir
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/test.dir
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/edit_cache.dir
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/rebuild_cache.dir
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/list_install_components.dir
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/install.dir
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/install/local.dir
+/home/x4/ros2_ws/src/build/minibot_simulation/CMakeFiles/install/strip.dir

@@ -63,9 +63,17 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}]
     )
     
-    # Launch Ignition Gazebo
+    # Create the joint state publisher GUI node
+    joint_state_publisher_gui_node = Node(
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+        name='joint_state_publisher_gui',
+        parameters=[{'use_sim_time': use_sim_time}]
+    )
+    
+    # Launch Ignition Gazebo with software rendering
     ignition_gazebo = ExecuteProcess(
-        cmd=['ign', 'gazebo', '-r', world_file_path],
+        cmd=['ign', 'gazebo', '-r', '--render-engine', 'ogre', world_file_path],
         output='screen'
     )
     
@@ -91,7 +99,7 @@ def generate_launch_description():
             # Clock bridge
             '/clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock',
             
-            # Cmd vel bridge
+            # Cmd vel bridge - make sure direction is correct
             '/cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist',
             
             # Odometry bridge
@@ -106,6 +114,9 @@ def generate_launch_description():
             
             # IMU bridge
             '/imu@sensor_msgs/msg/Imu[ignition.msgs.IMU',
+            
+            # Joint states bridge
+            '/joint_states@sensor_msgs/msg/JointState[ignition.msgs.Model',
             
             # TF bridge
             '/tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V',
@@ -122,14 +133,7 @@ def generate_launch_description():
         output='screen'
     )
     
-    # Add a static transform publisher for odom to map
-    static_transform_publisher = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='static_transform_publisher',
-        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
-        output='screen'
-    )
+    # Static transform publishers removed to avoid conflicts with robot_localization and Gazebo
     
     # Create the launch description and populate
     ld = LaunchDescription()
@@ -143,9 +147,10 @@ def generate_launch_description():
     # Add the nodes to the launch description
     ld.add_action(robot_state_publisher_node)
     ld.add_action(joint_state_publisher_node)
+    ld.add_action(joint_state_publisher_gui_node)
     ld.add_action(ignition_gazebo)
     ld.add_action(spawn_entity_cmd)
     ld.add_action(bridge_cmd)
-    ld.add_action(static_transform_publisher)
+    # Static transform publishers removed
     
     return ld

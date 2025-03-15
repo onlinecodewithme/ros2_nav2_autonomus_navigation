@@ -21,13 +21,16 @@ class AutonomousNavigation(Node):
         self.action_server_ready = False
         self.current_goal = None
         self.goal_positions = [
-            (2.0, 2.0),   # Top right
-            (-2.0, 2.0),  # Top left
-            (-2.0, -2.0), # Bottom left
-            (2.0, -2.0),  # Bottom right
-            (0.0, 0.0)    # Center
+            (1.5, 1.5),   # Top right (away from obstacle)
+            (-1.5, 1.5),  # Top left (away from obstacle)
+            (-1.5, -1.5), # Bottom left (away from obstacle)
+            (1.5, -1.5),  # Bottom right (away from obstacle)
+            (1.0, 0.0)    # Right of center (avoiding the center obstacle)
         ]
         self.current_goal_index = 0
+        self.get_logger().info('Waiting 30 seconds for navigation stack to initialize...')
+        time.sleep(30.0)  # Increase delay to give more time for navigation stack to initialize
+        self.timer = self.create_timer(1.0, self.check_action_server)
 
     def check_action_server(self):
         if not self.action_server_ready:
