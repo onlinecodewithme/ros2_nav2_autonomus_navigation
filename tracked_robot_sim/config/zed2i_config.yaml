@@ -1,0 +1,157 @@
+# ZED 2i Camera Configuration for ROS 2
+# Complete configuration file for ZED 2i stereo camera
+
+# -------- GENERAL PARAMETERS --------
+general:
+  camera_model: 'zed2i'               # Camera model: 'zed', 'zedm', 'zed2', 'zed2i', or 'zedx'
+  camera_name: 'zed2i'                # Name used to publish data in ROS topics
+  serial_number: 0                    # 0 means that the first camera found will be used
+  grab_frame_rate: 30                 # Camera FPS (can be different from publishing rate)
+  gpu_id: -1                          # GPU device to use, -1 means best available
+
+# -------- SUBSCRIBERS --------
+subscribers:
+  rgbd_topic_root: 'rgbd'             # Topic root name for RGBD subscription (`rgbd/image`, `rgbd/depth` ...)
+  rgbd_info_topic: 'rgbd_info'        # Topic name for RGBD Camera Info
+  imu_topic: 'imu'                    # Topic name for IMU subscription
+  atm_press_topic: 'atmospheric_pressure'  # Topic name for Atmospheric Pressure subscription
+  mag_topic: 'magnetometer'           # Topic name for Magnetometer subscription
+  temp_left_topic: 'temperature/left'  # Topic name for left temperature sensor (°C)
+  temp_right_topic: 'temperature/right'  # Topic name for right temperature sensor (°C)
+
+# -------- DEPTH PARAMETERS --------
+depth:
+  quality: 4                          # Depth quality: 1 (PERFORMANCE) to 4 (QUALITY)
+  sensing_mode: 0                     # 0: STANDARD, 1: FILL (not for neural networks)
+  depth_stabilization: 1              # Depth stabilization: 0=disable, 1=enable
+  openni_depth_mode: false            # Depth values scale (true: millimeters, false: meters)
+  depth_confidence: 50                # Depth confidence threshold (0-100)
+  depth_texture_conf: 100             # Texture confidence threshold (0-100)
+  point_cloud_freq: 15.0              # Point cloud sending frequency (Hz)
+  minimumDistance: 0.15               # Minimum depth value (meters)
+  maximumDistance: 45.0               # Maximum depth value (meters)
+
+# -------- POSITION TRACKING --------
+pos_tracking:
+  transform_time_offset: 0.0          # Time offset for transformation (seconds)
+  area_memory: true                   # Enable/disable area memory for SLAM
+  enable_pose_smoothing: false        # Enable/disable pose smoothing
+  floor_alignment: false              # Enable/disable floor alignment
+  set_floor_as_origin: false          # Enable/disable initial_base_pose as origin
+  set_as_static: false                # Set the camera as static in the scene
+  initial_base_pose: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # Initial pose [x,y,z,rx,ry,rz]
+  area_memory_db_path: ''             # Path to the Area Memory database
+  area_memory_key: ''                 # Key for Area Memory encryption
+  save_area_memory_db_on_close: false  # Save Area Memory database on exit
+  pose_smoothing: false               # Enable smooth pose correction
+
+# -------- MAPPING PARAMETERS --------
+mapping:
+  mapping_enabled: false              # Enable spatial mapping
+  resolution: 0.05                    # Resolution of the 3D map in meters
+  max_mapping_range: 3.0              # Maximum mapping depth range in meters
+  fused_pointcloud_freq: 1.0          # Frequency of fused point cloud publishing (Hz)
+  mesh_publishing: true               # Enable/disable mesh publishing
+
+# -------- SVO RECORDING --------
+svo_recording:
+  enabled: false                      # Enable/disable SVO recording
+  svo_filename: 'zed_recording.svo'   # SVO filename
+  compression_mode: 2                 # Compression mode: 0=LOSSLESS, 1=H264, 2=H265
+
+# -------- GNSS FUSION --------
+gnss:
+  gnss_fusion: false                  # Enable/disable GNSS fusion
+  gnss_frame: 'gnss_link'             # GNSS TF frame name
+  gnss_fix_topic: 'fix'               # Topic name for NavSatFix sensor message
+
+# -------- QOS PROFILES --------
+qos:
+  qos_history: 1                      # QoS history policy (1=KEEP_LAST, 2=KEEP_ALL)
+  qos_depth: 1                        # QoS queue depth (for KEEP_LAST)
+  qos_reliability: 1                  # QoS reliability (1=RELIABLE, 2=BEST_EFFORT)
+  qos_durability: 2                   # QoS durability (1=TRANSIENT_LOCAL, 2=VOLATILE)
+
+# -------- VIDEO PARAMETERS --------
+video:
+  exposure: 80                        # Manual exposure (0-100)
+  gain: 80                            # Manual gain (0-100)
+  auto_exposure_gain: true            # Enable auto exposure and gain
+  exposure_timeout: 100               # Auto exposure/gain timeout (100 is default)
+  brightness: 4                       # Brightness control (0-8)
+  contrast: 4                         # Contrast control (0-8)
+  hue: 0                              # Hue control (0-11)
+  saturation: 4                       # Saturation control (0-8)
+  sharpness: 4                        # Sharpness control (0-8)
+  gamma: 8                            # Gamma control (1-9)
+  auto_white_balance: true            # Enable auto white balance
+  whitebalance_temperature: 4600      # Manual white balance temperature (2800-6500)
+  white_balance_auto_mode: 1          # Auto WB mode: 0=STANDARD, 1=COOL_WHITE, 2=WARM_WHITE
+
+# -------- SENSORS PARAMETERS --------
+sensors:
+  sensors_timestamps_sync: false      # Enable/disable sensors timestamps sync
+  max_pub_rate: 200.0                 # Maximum publishing frequency (Hz)
+  publish_imu_tf: true                # Enable/disable IMU TF publishing
+
+# -------- ADVANCED PARAMETERS --------
+advanced:
+  verbose: true                       # Enable/disable verbose mode
+  sdk_verbose: false                  # Enable/disable SDK verbose mode
+  pub_frame_rate: 15.0                # Publishing frequency (Hz)
+
+# -------- OBJECT DETECTION --------
+object_detection:
+  od_enabled: false                   # Enable/disable object detection
+  model: 0                            # Object detection model: 0=MULTI_CLASS, 1=HUMAN, 2=CUSTOM
+  confidence_threshold: 50            # Minimum confidence threshold (0-100)
+  max_range: 15.0                     # Maximum detection range (meters)
+  object_tracking_enabled: true       # Enable/disable object tracking
+  body_fitting: false                 # Enable/disable body fitting
+  prediction_timeout_s: 0.5           # Prediction timeout in seconds
+  allow_reduced_precision_inference: true  # Allow reduced precision for higher performance
+  detection_publishing_rate: 15.0     # Detection publishing rate (Hz)
+  mc_people: true                     # Enable/disable 'Person' detection
+  mc_vehicle: true                    # Enable/disable 'Vehicle' detection
+  mc_bag: true                        # Enable/disable 'Bag' detection
+  mc_animal: true                     # Enable/disable 'Animal' detection
+  mc_electronics: true                # Enable/disable 'Electronics' detection
+  mc_fruit_vegetable: true            # Enable/disable 'Fruit/Vegetable' detection
+  mc_sport: true                      # Enable/disable 'Sport' detection
+
+# -------- BODY TRACKING --------
+body_tracking:
+  bt_enabled: false                   # Enable/disable body tracking
+  model: 0                            # 0: HUMAN_BODY_FAST, 1: HUMAN_BODY_MEDIUM, 2: HUMAN_BODY_ACCURATE
+  confidence_threshold: 70            # Minimum confidence threshold (0-100)
+  max_range: 15.0                     # Maximum tracking range (meters)
+  body_tracking_smoothing: false      # Enable/disable tracking smoothing
+  body_format: 1                      # Output format: 0=BODY_18, 1=BODY_34, 2=BODY_38, 3=BODY_70
+  tracking_publishing_rate: 15.0      # Publishing rate of tracked objects
+
+# -------- TF PUBLICATION --------
+pose:
+  publish_tf: true                    # Enable/disable TF publication
+  publish_map_tf: true                # Enable/disable publication of localization TF ('map'->'odom')
+  publish_imu_tf: true                # Enable/disable IMU TF publication
+  tf_publication_rate: 30.0           # TF publication frequency (Hz)
+  path_pub_rate: 30.0                 # Path publication frequency (Hz)
+  path_max_count: 1000                # Maximum number of poses in path
+
+# -------- TOPIC NAMES --------
+topic_names:
+  rgb: rgb                            # Topic name for RGB images
+  left: left                          # Topic name for left RGB images
+  right: right                        # Topic name for right RGB images
+  left_raw: left_raw                  # Topic name for left RAW images
+  right_raw: right_raw                # Topic name for right RAW images
+  depth: depth                        # Topic name for depth images
+  confidence: confidence              # Topic name for depth confidence images
+  point_cloud: point_cloud            # Topic name for point clouds
+  disparity: disparity                # Topic name for disparity images
+  depth_registered: depth_registered  # Topic name for registered depth images
+  depth_info: depth_info              # Topic name for depth information
+  stereo: stereo                      # Topic name for stereo pair
+  stereo_raw: stereo_raw              # Topic name for raw stereo pair
+  img_detections: img_detections      # Topic name for image detections
+  objects: objects                    # Topic name for object detections
