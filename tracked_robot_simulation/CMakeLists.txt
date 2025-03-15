@@ -7,21 +7,22 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclpy REQUIRED)
 
-# Install launch files and scripts
+# Install launch files
 install(DIRECTORY
   launch
-  config
   worlds
-  models
-  scripts
+  config
+  urdf
+  maps
+  tracked_robot_simulation
   DESTINATION share/${PROJECT_NAME}
 )
 
-# Make Python scripts executable
+# Install Python scripts
 install(PROGRAMS
-  scripts/simple_teleop.py
-  scripts/auto_teleop.py
+  tracked_robot_simulation/autonomous_navigation.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

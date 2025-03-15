@@ -11,12 +11,9 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     # Get the launch directory
     pkg_share = FindPackageShare(package='tracked_robot_simulation').find('tracked_robot_simulation')
-    nav_pkg_share = FindPackageShare(package='tracked_robot_nav').find('tracked_robot_nav')
     
     # Launch configuration variables
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    use_slam = LaunchConfiguration('slam', default='true')
-    map_yaml_file = LaunchConfiguration('map', default='')
     
     # Declare the launch arguments
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -24,49 +21,34 @@ def generate_launch_description():
         default_value='true',
         description='Use simulation (Gazebo) clock if true')
     
+    # Define slam parameter
+    slam = LaunchConfiguration('slam', default='false')
+    
+    # Declare slam argument
     declare_slam_cmd = DeclareLaunchArgument(
         'slam',
-        default_value='true',
+        default_value='false',
         description='Whether to run SLAM (true) or localization with existing map (false)')
     
-    declare_map_yaml_cmd = DeclareLaunchArgument(
-        'map',
-        default_value='',
-        description='Full path to map yaml file to load')
-    
-    # Include the robot spawning launch file
-    spawn_robot_cmd = IncludeLaunchDescription(
+    # Include the simulation launch file
+    simulation_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(pkg_share, 'launch', 'spawn_robot.launch.py')
+            os.path.join(pkg_share, 'launch', 'simulation_complete.launch.py')
         ),
         launch_arguments={
-            'use_sim_time': use_sim_time
+            'use_sim_time': use_sim_time,
+            'slam': slam,  # Use localization with existing map
+            'map': os.path.join(pkg_share, 'maps', 'map.yaml')  # Use a pre-built map
         }.items()
     )
     
-    # Include either SLAM or Navigation based on the 'slam' argument
-    slam_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            nav_pkg_share,
-            '/launch/slam.launch.py'
-        ]),
-        launch_arguments={
-            'use_sim_time': use_sim_time,
-            'map': map_yaml_file
-        }.items(),
-        condition=IfCondition(use_slam)
-    )
-    
-    navigation_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            nav_pkg_share,
-            '/launch/navigation.launch.py'
-        ]),
-        launch_arguments={
-            'use_sim_time': use_sim_time,
-            'map': map_yaml_file
-        }.items(),
-        condition=UnlessCondition(use_slam)
+    # Create the autonomous navigation node
+    autonomous_navigation_node = Node(
+        package='tracked_robot_simulation',
+        executable='autonomous_navigation.py',
+        name='autonomous_navigation',
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
     )
     
     # Create the launch description and populate
@@ -75,11 +57,9 @@ def generate_launch_description():
     # Declare the launch options
     ld.add_action(declare_use_sim_time_cmd)
     ld.add_action(declare_slam_cmd)
-    ld.add_action(declare_map_yaml_cmd)
     
     # Add the commands to the launch description
-    ld.add_action(spawn_robot_cmd)
-    ld.add_action(slam_cmd)
-    ld.add_action(navigation_cmd)
+    ld.add_action(simulation_cmd)
+    ld.add_action(autonomous_navigation_node)
     
     return ld

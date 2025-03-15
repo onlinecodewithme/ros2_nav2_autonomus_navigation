@@ -11,7 +11,6 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     # Get the launch directory
     pkg_share = FindPackageShare(package='tracked_robot_simulation').find('tracked_robot_simulation')
-    nav_pkg_share = FindPackageShare(package='tracked_robot_nav').find('tracked_robot_nav')
     
     # Launch configuration variables
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
@@ -34,39 +33,26 @@ def generate_launch_description():
         default_value='',
         description='Full path to map yaml file to load')
     
-    # Include the robot spawning launch file
-    spawn_robot_cmd = IncludeLaunchDescription(
+    # Include the navigation simulation launch file
+    navigation_simulation_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(pkg_share, 'launch', 'spawn_robot.launch.py')
+            os.path.join(pkg_share, 'launch', 'navigation_simulation.launch.py')
+        ),
+        launch_arguments={
+            'use_sim_time': use_sim_time,
+            'slam': use_slam,
+            'map': map_yaml_file
+        }.items()
+    )
+    
+    # Include the RViz launch file
+    rviz_cmd = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_share, 'launch', 'rviz.launch.py')
         ),
         launch_arguments={
             'use_sim_time': use_sim_time
         }.items()
-    )
-    
-    # Include either SLAM or Navigation based on the 'slam' argument
-    slam_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            nav_pkg_share,
-            '/launch/slam.launch.py'
-        ]),
-        launch_arguments={
-            'use_sim_time': use_sim_time,
-            'map': map_yaml_file
-        }.items(),
-        condition=IfCondition(use_slam)
-    )
-    
-    navigation_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            nav_pkg_share,
-            '/launch/navigation.launch.py'
-        ]),
-        launch_arguments={
-            'use_sim_time': use_sim_time,
-            'map': map_yaml_file
-        }.items(),
-        condition=UnlessCondition(use_slam)
     )
     
     # Create the launch description and populate
@@ -78,8 +64,7 @@ def generate_launch_description():
     ld.add_action(declare_map_yaml_cmd)
     
     # Add the commands to the launch description
-    ld.add_action(spawn_robot_cmd)
-    ld.add_action(slam_cmd)
-    ld.add_action(navigation_cmd)
+    ld.add_action(navigation_simulation_cmd)
+    ld.add_action(rviz_cmd)
     
     return ld

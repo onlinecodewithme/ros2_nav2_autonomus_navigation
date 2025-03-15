@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<robot name="tracked_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Include Gazebo ROS control plugin -->
+  <xacro:include filename="$(find tracked_robot_simulation)/urdf/tracked_robot_gazebo.gazebo"/>
+  
+  <!-- Robot constants -->
+  <xacro:property name="base_width" value="0.3"/>
+  <xacro:property name="base_length" value="0.5"/>
+  <xacro:property name="base_height" value="0.1"/>
+  <xacro:property name="wheel_radius" value="0.05"/>
+  <xacro:property name="track_width" value="0.05"/>
+  <xacro:property name="track_length" value="${base_length}"/>
+  <xacro:property name="track_height" value="0.03"/>
+  <xacro:property name="wheel_separation" value="${base_width + 2*track_width}"/>
+  <xacro:property name="ground_clearance" value="${wheel_radius - track_height/2}"/>
+  
+  <!-- Base link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 0.8 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="5.0"/>
+      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+    </inertial>
+  </link>
+
+  <!-- Left track -->
+  <link name="left_track">
+    <visual>
+      <geometry>
+        <box size="${track_length} ${track_width} ${track_height}"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="${track_length} ${track_width} ${track_height}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <!-- Right track -->
+  <link name="right_track">
+    <visual>
+      <geometry>
+        <box size="${track_length} ${track_width} ${track_height}"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="${track_length} ${track_width} ${track_height}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <!-- Left track joint -->
+  <joint name="left_track_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_track"/>
+    <origin xyz="0 ${-(base_width/2 + track_width/2)} ${-base_height/2 - track_height/2 + ground_clearance}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- Right track joint -->
+  <joint name="right_track_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_track"/>
+    <origin xyz="0 ${base_width/2 + track_width/2} ${-base_height/2 - track_height/2 + ground_clearance}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- ZED camera link -->
+  <link name="zed2i_camera_center">
+    <visual>
+      <geometry>
+        <box size="0.175 0.03 0.033"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.175 0.03 0.033"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <!-- ZED camera joint -->
+  <joint name="zed2i_camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="zed2i_camera_center"/>
+    <origin xyz="0.2 0 0.1" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Add a LiDAR sensor -->
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.04"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.04"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <!-- LiDAR joint -->
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0 0 ${base_height/2 + 0.02}" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Transmission for left track -->
+  <transmission name="left_track_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_track_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="left_track_motor">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!-- Transmission for right track -->
+  <transmission name="right_track_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_track_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="right_track_motor">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+</robot>
