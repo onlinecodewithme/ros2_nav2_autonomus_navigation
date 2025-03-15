@@ -1,0 +1,22 @@
+[0.178s] Invoking command in '/home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/zed-ros2-examples/tools/zed_benchmark_interfaces -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/zed_topic_benchmark_interfaces
+[0.416s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.950s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.341s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.362s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.380s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.426s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.459s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.549s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.776s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.014s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.581s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.664s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.779s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.781s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.782s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[5.934s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.945s] -- Added test 'lint_cmake' to check CMake code style
+[5.947s] -- Added test 'xmllint' to check XML markup files
+[5.989s] -- Configuring done
+[6.281s] -- Generating done
+[6.351s] -- Build files have been written to: /home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces

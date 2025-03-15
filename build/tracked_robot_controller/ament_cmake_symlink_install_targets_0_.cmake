@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/x4/ros2_ws/src/build/tracked_robot_controller/cmd_vel_to_tracks" "/home/x4/ros2_ws/src/build/tracked_robot_controller/track_odometry" "TARGETS" "cmd_vel_to_tracks" "track_odometry" "DESTINATION" "lib/tracked_robot_controller")

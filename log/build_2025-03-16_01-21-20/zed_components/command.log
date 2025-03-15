@@ -1,0 +1,1 @@
+Invoking command in '/home/x4/ros2_ws/src/build/zed_components': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/zed_components

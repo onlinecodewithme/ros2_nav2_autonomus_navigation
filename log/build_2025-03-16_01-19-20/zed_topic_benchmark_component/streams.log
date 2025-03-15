@@ -1,0 +1,46 @@
+[0.146s] Invoking command in '/home/x4/ros2_ws/src/build/zed_topic_benchmark_component': AMENT_PREFIX_PATH=/home/x4/ros2_ws/src/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/x4/ros2_ws/src/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble LD_LIBRARY_PATH=/home/x4/ros2_ws/src/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/x4/ros2_ws/src/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/x4/ros2_ws/src/zed-ros2-examples/tools/zed_benchmark_component -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/zed_topic_benchmark_component
+[21.405s] -- The C compiler identification is GNU 11.4.0
+[21.405s] -- The CXX compiler identification is GNU 11.4.0
+[21.405s] -- Detecting C compiler ABI info
+[21.405s] -- Detecting C compiler ABI info - done
+[21.405s] -- Check for working C compiler: /usr/bin/cc - skipped
+[21.406s] -- Detecting C compile features
+[21.406s] -- Detecting C compile features - done
+[21.406s] -- Detecting CXX compiler ABI info
+[21.406s] -- Detecting CXX compiler ABI info - done
+[21.406s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[21.406s] -- Detecting CXX compile features
+[21.406s] -- Detecting CXX compile features - done
+[21.406s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[21.407s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[21.407s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[21.407s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[21.407s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[21.407s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[21.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[21.407s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[21.407s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[21.408s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[21.408s] -- Found FastRTPS: /opt/ros/humble/include  
+[21.408s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[21.408s] -- Looking for pthread.h
+[21.408s] -- Looking for pthread.h - found
+[21.408s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[21.408s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[21.409s] -- Found Threads: TRUE  
+[21.409s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[21.409s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[21.409s] -- Added test 'copyright' to check source files copyright and LICENSE
+[21.409s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[21.409s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/x4/ros2_ws/src/zed-ros2-examples/tools/zed_benchmark_component/src/include>;$<BUILD_INTERFACE:/home/x4/ros2_ws/src/zed-ros2-examples/tools/zed_benchmark_component/src/component/include>
+[21.409s] -- Configured cppcheck exclude dirs and/or files: 
+[21.409s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[21.410s] -- Configured cpplint exclude dirs and/or files: 
+[21.410s] -- Added test 'lint_cmake' to check CMake code style
+[21.410s] -- Added test 'uncrustify' to check C / C++ code style
+[21.410s] -- Configured uncrustify additional arguments: 
+[21.410s] -- Added test 'xmllint' to check XML markup files
+[21.410s] -- Added test 'clang_format' to check C / C++ code style
+[21.410s] -- Configuring done
+[21.410s] -- Generating done
+[21.411s] -- Build files have been written to: /home/x4/ros2_ws/src/build/zed_topic_benchmark_component

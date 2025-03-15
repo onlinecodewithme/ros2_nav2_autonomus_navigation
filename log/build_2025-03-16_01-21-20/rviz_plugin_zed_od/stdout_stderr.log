@@ -1,0 +1,6 @@
+[ 20%] [34m[1mAutomatic MOC and UIC for target rviz_plugin_zed_od[0m
+[ 20%] Built target rviz_plugin_zed_od_autogen
+[35m[1mConsolidate compiler generated dependencies of target rviz_plugin_zed_od[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o[0m
+[32m[1mLinking CXX shared library librviz_plugin_zed_od.so[0m
+Built target rviz_plugin_zed_od

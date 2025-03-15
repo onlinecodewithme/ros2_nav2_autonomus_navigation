@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c301657ccd9bbe08d78d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tracked_robot_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cmd_vel_to_tracks::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmd_vel_to_tracks-ac88f11e5333e42a61c5.json",
+					"name" : "cmd_vel_to_tracks",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "track_odometry::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-track_odometry-c3ff362e5f255409ff6d.json",
+					"name" : "track_odometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tracked_robot_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tracked_robot_controller_uninstall-f34524a57cd0d61cda9d.json",
+					"name" : "tracked_robot_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ddfa664e90fdbb52766b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/x4/ros2_ws/src/build/tracked_robot_controller",
+		"source" : "/home/x4/ros2_ws/src/tracked_robot_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

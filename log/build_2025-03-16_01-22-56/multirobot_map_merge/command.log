@@ -1,0 +1,1 @@
+Invoking command in '/home/x4/ros2_ws/src/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/multirobot_map_merge -- -j8 -l8

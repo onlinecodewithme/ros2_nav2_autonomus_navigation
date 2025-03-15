@@ -1,0 +1,7 @@
+[0.184s] Invoking command in '/home/x4/ros2_ws/src/build/ros_odrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/ros_odrive_msg -- -j8 -l8
+[0.347s] [35m[1mConsolidate compiler generated dependencies of target ros_odrive_msg__rosidl_generator_c[0m
+[0.382s] [ 10%] Built target ros_odrive_msg__rosidl_generator_c
+[0.458s] failed to create symbolic link '/home/x4/ros2_ws/src/build/ros_odrive_msg/ament_cmake_python/ros_odrive_msg/ros_odrive_msg' because existing path cannot be removed: Is a directory
+[0.458s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg] Error 1
+[0.459s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg.dir/all] Error 2
+[0.459s] gmake: *** [Makefile:146: all] Error 2

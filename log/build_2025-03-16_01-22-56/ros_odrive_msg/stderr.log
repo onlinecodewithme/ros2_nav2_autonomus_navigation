@@ -1,0 +1,4 @@
+failed to create symbolic link '/home/x4/ros2_ws/src/build/ros_odrive_msg/ament_cmake_python/ros_odrive_msg/ros_odrive_msg' because existing path cannot be removed: Is a directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,2 @@
+Invoking command in '/home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces -- -j8 -l8
+Invoked command in '/home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces -- -j8 -l8

@@ -1,0 +1,256 @@
+[0.123s] Invoking command in '/home/x4/ros2_ws/src/build/ros_odrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/ros_odrive_msg -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/ros_odrive_msg
+[4.217s] -- The C compiler identification is GNU 11.4.0
+[4.217s] -- The CXX compiler identification is GNU 11.4.0
+[4.217s] -- Detecting C compiler ABI info
+[4.217s] -- Detecting C compiler ABI info - done
+[4.217s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.218s] -- Detecting C compile features
+[4.218s] -- Detecting C compile features - done
+[4.218s] -- Detecting CXX compiler ABI info
+[4.218s] -- Detecting CXX compiler ABI info - done
+[4.218s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.218s] -- Detecting CXX compile features
+[4.218s] -- Detecting CXX compile features - done
+[4.218s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.219s] -- Found ament_cmake_core: 1.3.11 (/opt/ros/humble/share/ament_cmake_core/cmake)
+[4.219s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.219s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.219s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.219s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.226s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[4.226s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.227s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.428s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.497s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.505s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.575s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.576s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.576s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.578s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[4.636s] -- Found PythonExtra: .so  
+[4.763s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.868s] -- Added test 'lint_cmake' to check CMake code style
+[4.872s] -- Added test 'xmllint' to check XML markup files
+[4.885s] -- Configuring done
+[4.997s] -- Generating done
+[5.023s] -- Build files have been written to: /home/x4/ros2_ws/src/build/ros_odrive_msg
+[5.070s] Invoked command in '/home/x4/ros2_ws/src/build/ros_odrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/ros_odrive_msg -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/ros_odrive_msg
+[5.071s] Invoking command in '/home/x4/ros2_ws/src/build/ros_odrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/ros_odrive_msg -- -j8 -l8
+[5.274s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.309s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.345s] [  5%] Built target ament_cmake_python_copy_ros_odrive_msg
+[7.060s] running egg_info
+[7.072s] creating ros_odrive_msg.egg-info
+[7.073s] writing ros_odrive_msg.egg-info/PKG-INFO
+[7.079s] writing dependency_links to ros_odrive_msg.egg-info/dependency_links.txt
+[7.079s] writing top-level names to ros_odrive_msg.egg-info/top_level.txt
+[7.082s] writing manifest file 'ros_odrive_msg.egg-info/SOURCES.txt'
+[7.122s] reading manifest file 'ros_odrive_msg.egg-info/SOURCES.txt'
+[7.126s] writing manifest file 'ros_odrive_msg.egg-info/SOURCES.txt'
+[7.527s] [  5%] Built target ament_cmake_python_build_ros_odrive_msg_egg
+[8.860s] [  7%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_generator_c.dir/rosidl_generator_c/ros_odrive_msg/msg/detail/odrive_msg__functions.c.o[0m
+[8.922s] [ 10%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_generator_c.dir/rosidl_generator_c/ros_odrive_msg/msg/detail/odrive_ctrl__functions.c.o[0m
+[9.402s] [ 12%] [32m[1mLinking C shared library libros_odrive_msg__rosidl_generator_c.so[0m
+[9.836s] [ 12%] Built target ros_odrive_msg__rosidl_generator_c
+[9.969s] [ 15%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[10.028s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.062s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[10.434s] [ 20%] Built target ros_odrive_msg__cpp
+[10.628s] [ 23%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[10.671s] [ 25%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.692s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[15.826s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_odrive_msg/msg/odrive_ctrl__type_support.cpp.o[0m
+[15.838s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_odrive_msg/msg/odrive_msg__type_support.cpp.o[0m
+[15.879s] [ 35%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_odrive_msg/msg/detail/odrive_ctrl__type_support.c.o[0m
+[15.913s] [ 38%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_odrive_msg/msg/detail/odrive_msg__type_support.c.o[0m
+[16.016s] [ 41%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_odrive_msg/msg/detail/odrive_ctrl__type_support_c.cpp.o[0m
+[16.310s] [ 43%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_odrive_msg/msg/detail/odrive_msg__type_support_c.cpp.o[0m
+[16.342s] [ 46%] [32m[1mLinking CXX shared library libros_odrive_msg__rosidl_typesupport_c.so[0m
+[16.373s] [ 48%] [32m[1mLinking C shared library libros_odrive_msg__rosidl_typesupport_introspection_c.so[0m
+[16.458s] [ 51%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_odrive_msg/msg/detail/dds_fastrtps/odrive_ctrl__type_support.cpp.o[0m
+[16.674s] [ 53%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_odrive_msg/msg/odrive_ctrl__type_support.cpp.o[0m
+[16.857s] [ 53%] Built target ros_odrive_msg__rosidl_typesupport_introspection_c
+[16.879s] [ 53%] Built target ros_odrive_msg__rosidl_typesupport_c
+[17.221s] [ 56%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_odrive_msg/msg/detail/odrive_ctrl__type_support.cpp.o[0m
+[19.614s] [ 58%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_odrive_msg/msg/odrive_msg__type_support.cpp.o[0m
+[20.102s] [ 61%] [32m[1mLinking CXX shared library libros_odrive_msg__rosidl_typesupport_fastrtps_c.so[0m
+[20.943s] [ 61%] Built target ros_odrive_msg__rosidl_typesupport_fastrtps_c
+[21.326s] [ 64%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_odrive_msg/msg/detail/odrive_msg__type_support.cpp.o[0m
+[22.187s] [ 66%] [32mBuilding CXX object CMakeFiles/ros_odrive_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_odrive_msg/msg/detail/dds_fastrtps/odrive_msg__type_support.cpp.o[0m
+[22.313s] [ 69%] [32m[1mLinking CXX shared library libros_odrive_msg__rosidl_typesupport_cpp.so[0m
+[22.735s] [ 69%] Built target ros_odrive_msg__rosidl_typesupport_cpp
+[24.901s] [ 71%] [32m[1mLinking CXX shared library libros_odrive_msg__rosidl_typesupport_introspection_cpp.so[0m
+[25.319s] [ 71%] Built target ros_odrive_msg__rosidl_typesupport_introspection_cpp
+[25.758s] [ 74%] [32m[1mLinking CXX shared library libros_odrive_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[26.282s] [ 74%] Built target ros_odrive_msg__rosidl_typesupport_fastrtps_cpp
+[26.630s] [ 74%] Built target ros_odrive_msg
+[26.928s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[32.787s] [ 76%] Built target ros_odrive_msg__py
+[33.053s] [ 79%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_generator_py.dir/rosidl_generator_py/ros_odrive_msg/msg/_odrive_ctrl_s.c.o[0m
+[33.845s] [ 82%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_generator_py.dir/rosidl_generator_py/ros_odrive_msg/msg/_odrive_msg_s.c.o[0m
+[34.664s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/ros_odrive_msg/libros_odrive_msg__rosidl_generator_py.so[0m
+[35.163s] [ 84%] Built target ros_odrive_msg__rosidl_generator_py
+[35.407s] [ 87%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_odrive_msg/_ros_odrive_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[36.282s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[36.607s] [ 89%] Built target ros_odrive_msg__rosidl_typesupport_fastrtps_c__pyext
+[36.980s] [ 92%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_odrive_msg/_ros_odrive_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[37.831s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[38.134s] [ 94%] Built target ros_odrive_msg__rosidl_typesupport_c__pyext
+[38.426s] [ 97%] [32mBuilding C object CMakeFiles/ros_odrive_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_odrive_msg/_ros_odrive_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[39.029s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[39.314s] [100%] Built target ros_odrive_msg__rosidl_typesupport_introspection_c__pyext
+[39.403s] Invoked command in '/home/x4/ros2_ws/src/build/ros_odrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/ros_odrive_msg -- -j8 -l8
+[39.404s] Invoking command in '/home/x4/ros2_ws/src/build/ros_odrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/x4/ros2_ws/src/build/ros_odrive_msg
+[55.838s] -- Install configuration: ""
+[55.839s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ament_index/resource_index/rosidl_interfaces/ros_odrive_msg
+[55.839s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg
+[55.839s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg
+[55.839s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/odrive_msg.h
+[55.840s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/odrive_ctrl.h
+[55.840s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/rosidl_generator_c__visibility_control.h
+[55.840s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail
+[55.840s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__functions.c
+[55.840s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__struct.h
+[55.840s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__functions.h
+[55.840s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__functions.c
+[55.841s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__struct.h
+[55.841s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__functions.h
+[55.841s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__type_support.h
+[55.841s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__type_support.h
+[55.841s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/environment/library_path.sh
+[55.841s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/environment/library_path.dsv
+[55.841s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_generator_c.so
+[55.841s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_generator_c.so" to ""
+[55.842s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg
+[55.842s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg
+[55.842s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail
+[55.842s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__rosidl_typesupport_fastrtps_c.h
+[55.842s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__rosidl_typesupport_fastrtps_c.h
+[55.842s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[55.842s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_fastrtps_c.so
+[55.842s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[55.843s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg
+[55.843s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg
+[55.843s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[55.843s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail
+[55.843s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__type_support.c
+[55.844s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__type_support.c
+[55.844s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__rosidl_typesupport_introspection_c.h
+[55.844s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__rosidl_typesupport_introspection_c.h
+[55.846s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_introspection_c.so
+[55.847s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_introspection_c.so" to ""
+[55.847s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_c.so
+[55.847s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_c.so" to ""
+[55.847s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg
+[55.848s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg
+[55.848s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/rosidl_generator_cpp__visibility_control.hpp
+[55.848s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail
+[55.848s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__traits.hpp
+[55.848s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__traits.hpp
+[55.848s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__struct.hpp
+[55.848s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__type_support.hpp
+[55.849s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__builder.hpp
+[55.849s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__struct.hpp
+[55.849s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__builder.hpp
+[55.849s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__type_support.hpp
+[55.849s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/odrive_ctrl.hpp
+[55.849s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/odrive_msg.hpp
+[55.849s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg
+[55.850s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg
+[55.850s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail
+[55.850s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[55.850s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/dds_fastrtps
+[55.850s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[55.851s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[55.851s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_fastrtps_cpp.so
+[55.851s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[55.853s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg
+[55.853s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg
+[55.854s] -- Up-to-date: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail
+[55.854s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__type_support.cpp
+[55.854s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__rosidl_typesupport_introspection_cpp.hpp
+[55.854s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[55.854s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/include/ros_odrive_msg/ros_odrive_msg/msg/detail/odrive_msg__type_support.cpp
+[55.854s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_introspection_cpp.so
+[55.854s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[55.854s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_cpp.so
+[55.855s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_typesupport_cpp.so" to ""
+[55.855s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/environment/pythonpath.sh
+[55.855s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/environment/pythonpath.dsv
+[55.855s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg-0.0.0-py3.10.egg-info
+[55.867s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg-0.0.0-py3.10.egg-info/SOURCES.txt
+[55.867s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg-0.0.0-py3.10.egg-info/dependency_links.txt
+[55.867s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg-0.0.0-py3.10.egg-info/PKG-INFO
+[55.868s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg-0.0.0-py3.10.egg-info/top_level.txt
+[55.868s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg
+[55.868s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[55.868s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg
+[55.868s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg/_odrive_ctrl_s.c
+[55.868s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg/_odrive_msg.py
+[55.868s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg/_odrive_ctrl.py
+[55.869s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg/__init__.py
+[55.869s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg/_odrive_msg_s.c
+[55.869s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/_ros_odrive_msg_s.ep.rosidl_typesupport_introspection_c.c
+[55.869s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/libros_odrive_msg__rosidl_generator_py.so
+[55.869s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/__init__.py
+[55.869s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/_ros_odrive_msg_s.ep.rosidl_typesupport_c.c
+[55.869s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/_ros_odrive_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[55.869s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[55.877s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[55.877s] Listing '/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg'...
+[55.878s] Compiling '/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/__init__.py'...
+[55.878s] Listing '/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg'...
+[55.878s] Compiling '/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg/__init__.py'...
+[55.878s] Compiling '/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg/_odrive_ctrl.py'...
+[55.878s] Compiling '/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/msg/_odrive_msg.py'...
+[55.879s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[55.879s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[55.879s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[55.879s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[55.879s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[55.879s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/local/lib/python3.10/dist-packages/ros_odrive_msg/ros_odrive_msg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[55.880s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_generator_py.so
+[55.880s] -- Set runtime path of "/home/x4/ros2_ws/src/install/ros_odrive_msg/lib/libros_odrive_msg__rosidl_generator_py.so" to ""
+[55.880s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/msg/OdriveCtrl.idl
+[55.880s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/msg/OdriveMsg.idl
+[55.880s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/msg/OdriveCtrl.msg
+[55.880s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/msg/OdriveMsg.msg
+[55.880s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ament_index/resource_index/package_run_dependencies/ros_odrive_msg
+[55.880s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ament_index/resource_index/parent_prefix_path/ros_odrive_msg
+[55.881s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/environment/ament_prefix_path.sh
+[55.881s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/environment/ament_prefix_path.dsv
+[55.881s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/environment/path.sh
+[55.881s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/environment/path.dsv
+[55.881s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/local_setup.bash
+[55.881s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/local_setup.sh
+[55.881s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/local_setup.zsh
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/local_setup.dsv
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/package.dsv
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ament_index/resource_index/packages/ros_odrive_msg
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_generator_cExport.cmake
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_generator_cExport-noconfig.cmake
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msg__rosidl_typesupport_introspection_cExport.cmake
+[55.882s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[55.883s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msg__rosidl_typesupport_cExport.cmake
+[55.883s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msg__rosidl_typesupport_cExport-noconfig.cmake
+[55.883s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_generator_cppExport.cmake
+[55.883s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[55.883s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[55.883s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msg__rosidl_typesupport_introspection_cppExport.cmake
+[55.883s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[55.883s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msg__rosidl_typesupport_cppExport.cmake
+[55.884s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[55.884s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_generator_pyExport.cmake
+[55.884s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/export_ros_odrive_msg__rosidl_generator_pyExport-noconfig.cmake
+[55.884s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/rosidl_cmake-extras.cmake
+[55.884s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[55.884s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[55.884s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ament_cmake_export_targets-extras.cmake
+[55.884s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[55.885s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[55.885s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[55.885s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msgConfig.cmake
+[55.885s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/cmake/ros_odrive_msgConfig-version.cmake
+[55.885s] -- Installing: /home/x4/ros2_ws/src/install/ros_odrive_msg/share/ros_odrive_msg/package.xml

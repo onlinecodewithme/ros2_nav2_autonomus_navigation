@@ -1,0 +1,79 @@
+costmap_node:
+  ros__parameters:
+    use_sim_time: False
+    global_frame: map
+    robot_base_frame: base_footprint
+    update_frequency: 5.0
+    publish_frequency: 2.0
+    resolution: 0.05
+    footprint: "[ [0.25, 0.15], [0.25, -0.15], [-0.25, -0.15], [-0.25, 0.15] ]"
+    plugins: ["static_layer", "obstacle_layer", "voxel_layer", "keepout_filter", "inflation_layer"]
+    
+    static_layer:
+      plugin: "nav2_costmap_2d::StaticLayer"
+      map_subscribe_transient_local: True
+      
+    obstacle_layer:
+      plugin: "nav2_costmap_2d::ObstacleLayer"
+      enabled: True
+      observation_sources: point_cloud
+      footprint_clearing_enabled: true
+      max_obstacle_height: 2.0
+      origin_z: -1.5  # Added to accommodate sensor at z=-1.16
+      z_resolution: 0.1
+      z_voxels: 35    # Increased to cover the extended z range
+      combination_method: 1
+      point_cloud:
+        topic: /zed2i/zed_node/point_cloud/cloud_registered
+        sensor_frame: zed2i_left_camera_optical_frame
+        data_type: "PointCloud2"
+        max_obstacle_height: 2.0
+        min_obstacle_height: 0.1
+        clearing: True
+        marking: True
+        expected_update_rate: 0.0
+        obstacle_range: 4.5
+        raytrace_range: 5.0
+        inf_is_valid: false
+        voxel_min_points: 0
+        filter: "voxel"
+        voxel_size: 0.1
+        
+    voxel_layer:
+      plugin: "nav2_costmap_2d::VoxelLayer"
+      enabled: True
+      publish_voxel_map: True
+      origin_z: -1.5  # Changed from 0.0 to accommodate sensor at z=-1.16
+      z_resolution: 0.1
+      z_voxels: 35    # Increased to cover the extended z range
+      max_obstacle_height: 2.0
+      unknown_threshold: 8
+      mark_threshold: 0
+      observation_sources: point_cloud
+      point_cloud:
+        topic: /zed2i/zed_node/point_cloud/cloud_registered
+        sensor_frame: zed2i_left_camera_optical_frame
+        data_type: "PointCloud2"
+        max_obstacle_height: 2.0
+        min_obstacle_height: 0.1
+        clearing: True
+        marking: True
+        expected_update_rate: 0.0
+        obstacle_range: 4.5
+        raytrace_range: 5.0
+        inf_is_valid: false
+        voxel_min_points: 0
+        filter: "voxel"
+        voxel_size: 0.1
+        
+    keepout_filter:
+      plugin: "nav2_costmap_2d::KeepoutFilter"
+      enabled: True
+      filter_info_topic: "/costmap_filter_info"
+      
+    inflation_layer:
+      plugin: "nav2_costmap_2d::InflationLayer"
+      cost_scaling_factor: 3.0
+      inflation_radius: 0.55
+      
+    always_send_full_costmap: True

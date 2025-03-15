@@ -1,0 +1,7 @@
+[0.088s] Invoking command in '/home/x4/ros2_ws/src/build/rviz_plugin_zed_od': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/rviz_plugin_zed_od -- -j8 -l8
+[0.438s] [ 20%] [34m[1mAutomatic MOC and UIC for target rviz_plugin_zed_od[0m
+[0.556s] [ 20%] Built target rviz_plugin_zed_od_autogen
+[0.611s] [35m[1mConsolidate compiler generated dependencies of target rviz_plugin_zed_od[0m
+[0.693s] [ 40%] [32mBuilding CXX object CMakeFiles/rviz_plugin_zed_od.dir/src/plugin/src/zed_od_display.cpp.o[0m
+[35.866s] [32m[1mLinking CXX shared library librviz_plugin_zed_od.so[0m
+[39.359s] Built target rviz_plugin_zed_od

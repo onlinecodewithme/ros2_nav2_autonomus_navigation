@@ -1,0 +1,17 @@
+/home/x4/ros2_ws/src/install/tracked_robot_controller/lib/tracked_robot_controller/cmd_vel_to_tracks
+/home/x4/ros2_ws/src/install/tracked_robot_controller/lib/tracked_robot_controller/track_odometry
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/ament_index/resource_index/package_run_dependencies/tracked_robot_controller
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/ament_index/resource_index/parent_prefix_path/tracked_robot_controller
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/environment/ament_prefix_path.sh
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/environment/ament_prefix_path.dsv
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/environment/path.sh
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/environment/path.dsv
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/local_setup.bash
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/local_setup.sh
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/local_setup.zsh
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/local_setup.dsv
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/package.dsv
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/ament_index/resource_index/packages/tracked_robot_controller
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/cmake/tracked_robot_controllerConfig.cmake
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/cmake/tracked_robot_controllerConfig-version.cmake
+/home/x4/ros2_ws/src/install/tracked_robot_controller/share/tracked_robot_controller/package.xml

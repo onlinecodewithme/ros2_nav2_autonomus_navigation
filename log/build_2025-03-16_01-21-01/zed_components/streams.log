@@ -1,0 +1,34 @@
+[0.212s] Invoking command in '/home/x4/ros2_ws/src/build/zed_components': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/zed_components
+[0.627s] -- Found CUDA: /usr/local/cuda-12.6 (found suitable version "12.6", minimum required is "12.6") 
+[0.827s] -- Found CUDA: /usr/local/cuda-12.6 (found version "12.6") 
+[0.831s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.493s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.826s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.832s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.852s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.884s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.927s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.220s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.226s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.736s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.140s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.155s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.752s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.897s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.902s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.905s] -- Configured cppcheck include dirs: /home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/include;/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include;/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/tools/include
+[4.905s] -- Configured cppcheck exclude dirs and/or files: 
+[4.911s] -- Added test 'lint_cmake' to check CMake code style
+[4.923s] -- Added test 'uncrustify' to check C / C++ code style
+[4.923s] -- Configured uncrustify additional arguments: 
+[4.926s] -- Added test 'xmllint' to check XML markup files
+[4.953s] -- Configuring done
+[5.206s] -- Generating done
+[5.298s] -- Build files have been written to: /home/x4/ros2_ws/src/build/zed_components
+[5.385s] Invoked command in '/home/x4/ros2_ws/src/build/zed_components' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/zed_components
+[5.386s] Invoking command in '/home/x4/ros2_ws/src/build/zed_components': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/zed_components -- -j8 -l8
+[5.813s] [35m[1mConsolidate compiler generated dependencies of target zed_camera_component[0m
+[5.994s] [ 10%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o[0m
+[13.469s] gmake[2]: *** [CMakeFiles/zed_camera_component.dir/build.make:118: CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o] Interrupt
+[13.470s] gmake[1]: *** [CMakeFiles/Makefile2:166: CMakeFiles/zed_camera_component.dir/all] Interrupt
+[13.470s] gmake: *** [Makefile:146: all] Interrupt

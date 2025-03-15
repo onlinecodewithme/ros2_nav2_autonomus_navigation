@@ -1,0 +1,1 @@
+Invoking command in '/home/x4/ros2_ws/src/build/ros_odrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/ros_odrive_msg -- -j8 -l8

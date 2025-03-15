@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/zed_camera_component.dir/build.make:118: CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:166: CMakeFiles/zed_camera_component.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

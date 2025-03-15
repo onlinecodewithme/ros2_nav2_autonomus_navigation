@@ -1,0 +1,4 @@
+Invoking command in '/home/x4/ros2_ws/src/build/agv_proto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/agv_proto -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/agv_proto
+Invoked command in '/home/x4/ros2_ws/src/build/agv_proto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/agv_proto -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/agv_proto
+Invoking command in '/home/x4/ros2_ws/src/build/agv_proto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/agv_proto -- -j8 -l8
+Invoked command in '/home/x4/ros2_ws/src/build/agv_proto' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/agv_proto -- -j8 -l8

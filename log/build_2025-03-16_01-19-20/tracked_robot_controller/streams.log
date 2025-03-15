@@ -1,0 +1,46 @@
+[0.092s] Invoking command in '/home/x4/ros2_ws/src/build/tracked_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/tracked_robot_controller -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/tracked_robot_controller
+[0.277s] -- The C compiler identification is GNU 11.4.0
+[0.460s] -- The CXX compiler identification is GNU 11.4.0
+[0.497s] -- Detecting C compiler ABI info
+[0.706s] -- Detecting C compiler ABI info - done
+[0.727s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.730s] -- Detecting C compile features
+[0.730s] -- Detecting C compile features - done
+[0.737s] -- Detecting CXX compiler ABI info
+[1.005s] -- Detecting CXX compiler ABI info - done
+[1.031s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.032s] -- Detecting CXX compile features
+[1.035s] -- Detecting CXX compile features - done
+[1.048s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.573s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.994s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.139s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.159s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.186s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.221s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.275s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.415s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.427s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.712s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.803s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.916s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.950s] -- Looking for pthread.h
+[3.177s] -- Looking for pthread.h - found
+[3.179s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.404s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.407s] -- Found Threads: TRUE  
+[3.558s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.592s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.640s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[3.674s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.136s] -- Configuring done
+[4.199s] -- Generating done
+[4.228s] -- Build files have been written to: /home/x4/ros2_ws/src/build/tracked_robot_controller
+[4.277s] Invoked command in '/home/x4/ros2_ws/src/build/tracked_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/tracked_robot_controller -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/tracked_robot_controller
+[4.278s] Invoking command in '/home/x4/ros2_ws/src/build/tracked_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/tracked_robot_controller -- -j8 -l8
+[5.114s] [ 25%] [32mBuilding CXX object CMakeFiles/cmd_vel_to_tracks.dir/src/cmd_vel_to_tracks.cpp.o[0m
+[5.114s] [ 50%] [32mBuilding CXX object CMakeFiles/track_odometry.dir/src/track_odometry.cpp.o[0m
+[60.700s] [ 75%] [32m[1mLinking CXX executable cmd_vel_to_tracks[0m
+[62.068s] [ 75%] Built target cmd_vel_to_tracks
+[62.077s] [100%] [32m[1mLinking CXX executable track_odometry[0m
+[63.620s] [100%] Built target track_odometry

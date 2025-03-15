@@ -1,0 +1,972 @@
+[0.000000] (-) TimerEvent: {}
+[0.001461] (agv_proto) JobQueued: {'identifier': 'agv_proto', 'dependencies': OrderedDict()}
+[0.001785] (explore_lite) JobQueued: {'identifier': 'explore_lite', 'dependencies': OrderedDict()}
+[0.002092] (multirobot_map_merge) JobQueued: {'identifier': 'multirobot_map_merge', 'dependencies': OrderedDict()}
+[0.002197] (ros_odrive_msg) JobQueued: {'identifier': 'ros_odrive_msg', 'dependencies': OrderedDict()}
+[0.002373] (rviz_plugin_zed_od) JobQueued: {'identifier': 'rviz_plugin_zed_od', 'dependencies': OrderedDict()}
+[0.002460] (tracked_robot_controller) JobQueued: {'identifier': 'tracked_robot_controller', 'dependencies': OrderedDict()}
+[0.002542] (tracked_robot_description) JobQueued: {'identifier': 'tracked_robot_description', 'dependencies': OrderedDict()}
+[0.002593] (zed_components) JobQueued: {'identifier': 'zed_components', 'dependencies': OrderedDict()}
+[0.003019] (zed_topic_benchmark_interfaces) JobQueued: {'identifier': 'zed_topic_benchmark_interfaces', 'dependencies': OrderedDict()}
+[0.003098] (zed_tutorial_depth) JobQueued: {'identifier': 'zed_tutorial_depth', 'dependencies': OrderedDict()}
+[0.003220] (zed_tutorial_pos_tracking) JobQueued: {'identifier': 'zed_tutorial_pos_tracking', 'dependencies': OrderedDict()}
+[0.003286] (zed_tutorial_video) JobQueued: {'identifier': 'zed_tutorial_video', 'dependencies': OrderedDict()}
+[0.003344] (zed_aruco_localization) JobQueued: {'identifier': 'zed_aruco_localization', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components')])}
+[0.003400] (zed_rgb_convert) JobQueued: {'identifier': 'zed_rgb_convert', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components')])}
+[0.003447] (zed_topic_benchmark_component) JobQueued: {'identifier': 'zed_topic_benchmark_component', 'dependencies': OrderedDict([('zed_topic_benchmark_interfaces', '/home/x4/ros2_ws/src/install/zed_topic_benchmark_interfaces')])}
+[0.004109] (zed_wrapper) JobQueued: {'identifier': 'zed_wrapper', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components')])}
+[0.004353] (tracked_robot_nav) JobQueued: {'identifier': 'tracked_robot_nav', 'dependencies': OrderedDict([('tracked_robot_description', '/home/x4/ros2_ws/src/install/tracked_robot_description'), ('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper')])}
+[0.004475] (zed_depth_to_laserscan) JobQueued: {'identifier': 'zed_depth_to_laserscan', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper')])}
+[0.004542] (zed_display_rviz2) JobQueued: {'identifier': 'zed_display_rviz2', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper')])}
+[0.005142] (zed_multi_camera) JobQueued: {'identifier': 'zed_multi_camera', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper')])}
+[0.005240] (zed_navigation_config) JobQueued: {'identifier': 'zed_navigation_config', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper')])}
+[0.005348] (zed_robot_integration) JobQueued: {'identifier': 'zed_robot_integration', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper')])}
+[0.005427] (zed_ros2) JobQueued: {'identifier': 'zed_ros2', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper')])}
+[0.005488] (zed_topic_benchmark) JobQueued: {'identifier': 'zed_topic_benchmark', 'dependencies': OrderedDict([('zed_topic_benchmark_interfaces', '/home/x4/ros2_ws/src/install/zed_topic_benchmark_interfaces'), ('zed_topic_benchmark_component', '/home/x4/ros2_ws/src/install/zed_topic_benchmark_component')])}
+[0.005611] (tracked_robot_simulation) JobQueued: {'identifier': 'tracked_robot_simulation', 'dependencies': OrderedDict([('tracked_robot_controller', '/home/x4/ros2_ws/src/install/tracked_robot_controller'), ('tracked_robot_description', '/home/x4/ros2_ws/src/install/tracked_robot_description'), ('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper'), ('tracked_robot_nav', '/home/x4/ros2_ws/src/install/tracked_robot_nav')])}
+[0.005698] (zed_ipc) JobQueued: {'identifier': 'zed_ipc', 'dependencies': OrderedDict([('zed_components', '/home/x4/ros2_ws/src/install/zed_components'), ('zed_wrapper', '/home/x4/ros2_ws/src/install/zed_wrapper'), ('zed_multi_camera', '/home/x4/ros2_ws/src/install/zed_multi_camera')])}
+[0.005788] (zed_components) JobStarted: {'identifier': 'zed_components'}
+[0.022456] (tracked_robot_description) JobStarted: {'identifier': 'tracked_robot_description'}
+[0.035675] (zed_topic_benchmark_interfaces) JobStarted: {'identifier': 'zed_topic_benchmark_interfaces'}
+[0.048471] (tracked_robot_controller) JobStarted: {'identifier': 'tracked_robot_controller'}
+[0.063309] (agv_proto) JobStarted: {'identifier': 'agv_proto'}
+[0.082987] (explore_lite) JobStarted: {'identifier': 'explore_lite'}
+[0.097793] (multirobot_map_merge) JobStarted: {'identifier': 'multirobot_map_merge'}
+[0.100583] (-) TimerEvent: {}
+[0.116438] (ros_odrive_msg) JobStarted: {'identifier': 'ros_odrive_msg'}
+[0.137097] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'cmake'}
+[0.138947] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'build'}
+[0.142001] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/x4/ros2_ws/src/build/zed_components', '--', '-j8', '-l8'], 'cwd': '/home/x4/ros2_ws/src/build/zed_components', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/zed_components'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.153473] (tracked_robot_description) JobProgress: {'identifier': 'tracked_robot_description', 'progress': 'cmake'}
+[0.153681] (tracked_robot_description) JobProgress: {'identifier': 'tracked_robot_description', 'progress': 'build'}
+[0.153752] (tracked_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/x4/ros2_ws/src/build/tracked_robot_description', '--', '-j8', '-l8'], 'cwd': '/home/x4/ros2_ws/src/build/tracked_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/tracked_robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.163006] (zed_topic_benchmark_interfaces) JobProgress: {'identifier': 'zed_topic_benchmark_interfaces', 'progress': 'cmake'}
+[0.166533] (zed_topic_benchmark_interfaces) JobProgress: {'identifier': 'zed_topic_benchmark_interfaces', 'progress': 'build'}
+[0.168544] (zed_topic_benchmark_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.186959] (tracked_robot_controller) JobProgress: {'identifier': 'tracked_robot_controller', 'progress': 'cmake'}
+[0.187354] (tracked_robot_controller) JobProgress: {'identifier': 'tracked_robot_controller', 'progress': 'build'}
+[0.187442] (tracked_robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/x4/ros2_ws/src/build/tracked_robot_controller', '--', '-j8', '-l8'], 'cwd': '/home/x4/ros2_ws/src/build/tracked_robot_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/tracked_robot_controller'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.194594] (agv_proto) JobProgress: {'identifier': 'agv_proto', 'progress': 'cmake'}
+[0.206241] (agv_proto) Command: {'cmd': ['/usr/bin/cmake', '/home/x4/ros2_ws/src/example_project/agv_proto', '-DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/agv_proto'], 'cwd': '/home/x4/ros2_ws/src/build/agv_proto', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/agv_proto'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.208098] (-) TimerEvent: {}
+[0.225984] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'cmake'}
+[0.226224] (explore_lite) JobProgress: {'identifier': 'explore_lite', 'progress': 'build'}
+[0.226300] (explore_lite) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/x4/ros2_ws/src/build/explore_lite', '--', '-j8', '-l8'], 'cwd': '/home/x4/ros2_ws/src/build/explore_lite', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/explore_lite'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.247723] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'cmake'}
+[0.247941] (multirobot_map_merge) JobProgress: {'identifier': 'multirobot_map_merge', 'progress': 'build'}
+[0.248009] (multirobot_map_merge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/x4/ros2_ws/src/build/multirobot_map_merge', '--', '-j8', '-l8'], 'cwd': '/home/x4/ros2_ws/src/build/multirobot_map_merge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/multirobot_map_merge'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.290922] (ros_odrive_msg) JobProgress: {'identifier': 'ros_odrive_msg', 'progress': 'cmake'}
+[0.292415] (ros_odrive_msg) JobProgress: {'identifier': 'ros_odrive_msg', 'progress': 'build'}
+[0.293018] (ros_odrive_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/x4/ros2_ws/src/build/ros_odrive_msg', '--', '-j8', '-l8'], 'cwd': '/home/x4/ros2_ws/src/build/ros_odrive_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/ros_odrive_msg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.301951] (zed_components) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target zed_camera_component\x1b[0m\n'}
+[0.308704] (-) TimerEvent: {}
+[0.321623] (tracked_robot_description) CommandEnded: {'returncode': 0}
+[0.322849] (tracked_robot_description) JobProgress: {'identifier': 'tracked_robot_description', 'progress': 'install'}
+[0.368460] (tracked_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/x4/ros2_ws/src/build/tracked_robot_description'], 'cwd': '/home/x4/ros2_ws/src/build/tracked_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'x4'), ('SSH_CLIENT', '192.168.1.74 49915 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg/lib:/home/x4/ros2_ws/install/agv_proto/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/home/x4/ros2_ws/install/zed_ipc/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_component/lib:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/lib:/home/x4/ros2_ws/install/zed_rgb_convert/lib:/home/x4/ros2_ws/install/zed_aruco_localization/lib:/home/x4/ros2_ws/install/zed_components/lib:/home/x4/ros2_ws/install/rviz_plugin_zed_od/lib:/home/x4/ros2_ws/install/multirobot_map_merge/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/x4'), ('OLDPWD', '/home/x4/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f76e3154-6ffa-407c-adad-e65e8c862ee6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/x4/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'x4'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '23'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/x4/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/x4/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/x4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/x4/.vscode-server/extensions/ms-python.debugpy-2025.4.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c2a4918c679aa9c.txt'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-982d411f02.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/opt/ros/humble:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/x4/ros2_ws/src/build/tracked_robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.74 49915 192.168.1.83 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/x4/ros2_ws/install/ros_odrive_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/x4/ros2_ws/install/ros_odrive_msg:/home/x4/ros2_ws/install/agv_proto:/home/x4/ros2_ws/install/zed_ros2:/home/x4/ros2_ws/install/zed_robot_integration:/home/x4/ros2_ws/install/zed_navigation_config:/home/x4/ros2_ws/install/zed_ipc:/home/x4/ros2_ws/install/zed_multi_camera:/home/x4/ros2_ws/install/zed_display_rviz2:/home/x4/ros2_ws/install/zed_depth_to_laserscan:/home/x4/ros2_ws/install/tracked_robot_simulation:/home/x4/ros2_ws/install/tracked_robot_sim:/home/x4/ros2_ws/install/tracked_robot_nav:/home/x4/ros2_ws/install/zed_wrapper:/home/x4/ros2_ws/install/zed_tutorial_video:/home/x4/ros2_ws/install/zed_tutorial_pos_tracking:/home/x4/ros2_ws/install/zed_tutorial_depth:/home/x4/ros2_ws/install/zed_topic_benchmark:/home/x4/ros2_ws/install/zed_topic_benchmark_component:/home/x4/ros2_ws/install/zed_topic_benchmark_interfaces:/home/x4/ros2_ws/install/zed_rgb_convert:/home/x4/ros2_ws/install/zed_aruco_localization:/home/x4/ros2_ws/install/zed_components:/home/x4/ros2_ws/install/tracked_robot_description:/home/x4/ros2_ws/install/tracked_robot_controller:/home/x4/ros2_ws/install/rviz_plugin_zed_od:/home/x4/ros2_ws/install/multirobot_map_merge:/home/x4/ros2_ws/install/minibot_simulation:/home/x4/ros2_ws/install/explore_lite:/opt/ros/humble')]), 'shell': False}
+[0.378719] (zed_topic_benchmark_interfaces) StdoutLine: {'line': b'[  3%] Built target zed_topic_benchmark_interfaces__cpp\n'}
+[0.383891] (zed_components) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o\x1b[0m\n'}
+[0.408870] (-) TimerEvent: {}
+[0.420849] (agv_proto) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.427876] (multirobot_map_merge) StdoutLine: {'line': b'[ 33%] Built target combine_grids\n'}
+[0.451085] (zed_topic_benchmark_interfaces) StderrLine: {'line': b"failed to create symbolic link '/home/x4/ros2_ws/src/build/zed_topic_benchmark_interfaces/ament_cmake_python/zed_topic_benchmark_interfaces/zed_topic_benchmark_interfaces' because existing path cannot be removed: Is a directory\n"}
+[0.453422] (zed_topic_benchmark_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_zed_topic_benchmark_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_zed_topic_benchmark_interfaces] Error 1\n'}
+[0.455751] (zed_topic_benchmark_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:448: CMakeFiles/ament_cmake_python_symlink_zed_topic_benchmark_interfaces.dir/all] Error 2\n'}
+[0.456184] (zed_topic_benchmark_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.462430] (zed_topic_benchmark_interfaces) CommandEnded: {'returncode': 2}
+[0.463888] (ros_odrive_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros_odrive_msg__rosidl_generator_c\x1b[0m\n'}
+[0.474510] (tracked_robot_controller) StdoutLine: {'line': b'[ 50%] Built target cmd_vel_to_tracks\n'}
+[0.486396] (explore_lite) StdoutLine: {'line': b'[ 40%] Built target explore\n'}
+[0.498210] (ros_odrive_msg) StdoutLine: {'line': b'[ 10%] Built target ros_odrive_msg__rosidl_generator_c\n'}
+[0.509295] (-) TimerEvent: {}
+[0.521846] (multirobot_map_merge) StdoutLine: {'line': b'[ 50%] Built target gtest\n'}
+[0.543658] (zed_topic_benchmark_interfaces) JobEnded: {'identifier': 'zed_topic_benchmark_interfaces', 'rc': 2}
+[0.557802] (tracked_robot_controller) StdoutLine: {'line': b'[100%] Built target track_odometry\n'}
+[0.570247] (explore_lite) StdoutLine: {'line': b'[ 60%] Built target gtest\n'}
+[0.574160] (multirobot_map_merge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target map_merge\x1b[0m\n'}
+[0.574771] (ros_odrive_msg) StderrLine: {'line': b"failed to create symbolic link '/home/x4/ros2_ws/src/build/ros_odrive_msg/ament_cmake_python/ros_odrive_msg/ros_odrive_msg' because existing path cannot be removed: Is a directory\n"}
+[0.575093] (ros_odrive_msg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg] Error 1\n'}
+[0.575270] (ros_odrive_msg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_ros_odrive_msg.dir/all] Error 2\n'}
+[0.575633] (ros_odrive_msg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.580891] (tracked_robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.581435] (tracked_robot_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.581620] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/urdf/tracked_robot.urdf\n'}
+[0.581777] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/urdf/tracked_robot.urdf.xacro\n'}
+[0.581930] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/launch/robot_state_publisher.launch.py\n'}
+[0.582079] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/ament_index/resource_index/package_run_dependencies/tracked_robot_description\n'}
+[0.582226] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/ament_index/resource_index/parent_prefix_path/tracked_robot_description\n'}
+[0.582365] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/environment/ament_prefix_path.sh\n'}
+[0.582505] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/environment/ament_prefix_path.dsv\n'}
+[0.582641] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/environment/path.sh\n'}
+[0.582780] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/environment/path.dsv\n'}
+[0.582915] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/local_setup.bash\n'}
+[0.583054] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/local_setup.sh\n'}
+[0.583195] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/local_setup.zsh\n'}
+[0.583330] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/local_setup.dsv\n'}
+[0.583467] (tracked_robot_description) StdoutLine: {'line': b'-- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/package.dsv\n'}
+[0.583605] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/ament_index/resource_index/packages/tracked_robot_description\n'}
+[0.583739] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/cmake/tracked_robot_descriptionConfig.cmake\n'}
+[0.583876] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/cmake/tracked_robot_descriptionConfig-version.cmake\n'}
+[0.584040] (tracked_robot_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/package.xml\n'}
+[0.584179] (ros_odrive_msg) JobEnded: {'identifier': 'ros_odrive_msg', 'rc': 'SIGINT'}
+[0.585932] (tracked_robot_description) JobEnded: {'identifier': 'tracked_robot_description', 'rc': 'SIGINT'}
+[0.591827] (tracked_robot_controller) JobEnded: {'identifier': 'tracked_robot_controller', 'rc': 'SIGINT'}
+[0.604281] (agv_proto) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.611025] (-) TimerEvent: {}
+[0.624061] (agv_proto) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.647504] (explore_lite) StdoutLine: {'line': b'[ 80%] Built target gtest_main\n'}
+[0.654632] (multirobot_map_merge) StdoutLine: {'line': b'[ 66%] Built target map_merge\n'}
+[0.710686] (multirobot_map_merge) StdoutLine: {'line': b'[ 83%] Built target gtest_main\n'}
+[0.711194] (-) TimerEvent: {}
+[0.716300] (explore_lite) StdoutLine: {'line': b'[100%] Built target test_explore\n'}
+[0.743682] (explore_lite) JobEnded: {'identifier': 'explore_lite', 'rc': 'SIGINT'}
+[0.780759] (multirobot_map_merge) StdoutLine: {'line': b'[100%] Built target test_merging_pipeline\n'}
+[0.802761] (agv_proto) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.813379] (multirobot_map_merge) JobEnded: {'identifier': 'multirobot_map_merge', 'rc': 'SIGINT'}
+[0.814908] (-) TimerEvent: {}
+[0.827356] (agv_proto) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.827995] (agv_proto) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.828831] (agv_proto) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.837161] (agv_proto) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.915081] (-) TimerEvent: {}
+[1.015798] (-) TimerEvent: {}
+[1.028892] (agv_proto) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.052486] (agv_proto) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.053220] (agv_proto) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.057529] (agv_proto) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.067672] (agv_proto) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.115943] (-) TimerEvent: {}
+[1.216693] (-) TimerEvent: {}
+[1.317839] (-) TimerEvent: {}
+[1.418613] (-) TimerEvent: {}
+[1.458318] (agv_proto) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.518772] (-) TimerEvent: {}
+[1.619631] (-) TimerEvent: {}
+[1.720503] (-) TimerEvent: {}
+[1.777275] (agv_proto) StdoutLine: {'line': b'-- Found hardware_interface: 2.48.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[1.820671] (-) TimerEvent: {}
+[1.916584] (agv_proto) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.920799] (-) TimerEvent: {}
+[1.936611] (agv_proto) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.963920] (agv_proto) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.000073] (agv_proto) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.020959] (-) TimerEvent: {}
+[2.049887] (agv_proto) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.121141] (-) TimerEvent: {}
+[2.221861] (-) TimerEvent: {}
+[2.322595] (-) TimerEvent: {}
+[2.423275] (-) TimerEvent: {}
+[2.523996] (-) TimerEvent: {}
+[2.584201] (agv_proto) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.596349] (agv_proto) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.624203] (-) TimerEvent: {}
+[2.673549] (agv_proto) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.724358] (-) TimerEvent: {}
+[2.817793] (agv_proto) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.824617] (-) TimerEvent: {}
+[2.827249] (agv_proto) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.867908] (agv_proto) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.874654] (agv_proto) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.892125] (agv_proto) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.921776] (agv_proto) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.924743] (-) TimerEvent: {}
+[2.957365] (agv_proto) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.024913] (-) TimerEvent: {}
+[3.124980] (agv_proto) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.125514] (-) TimerEvent: {}
+[3.126432] (agv_proto) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.225706] (-) TimerEvent: {}
+[3.300791] (agv_proto) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.304861] (agv_proto) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.325901] (-) TimerEvent: {}
+[3.426650] (-) TimerEvent: {}
+[3.443735] (agv_proto) StdoutLine: {'line': b'-- Found ros_odrive_msg: 0.0.0 (/home/x4/ros2_ws/install/ros_odrive_msg/share/ros_odrive_msg/cmake)\n'}
+[3.479889] (agv_proto) StdoutLine: {'line': b'-- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)\n'}
+[3.490666] (agv_proto) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[3.526814] (-) TimerEvent: {}
+[3.584680] (agv_proto) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[3.626964] (-) TimerEvent: {}
+[3.680171] (agv_proto) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.727109] (-) TimerEvent: {}
+[3.827793] (-) TimerEvent: {}
+[3.919416] (agv_proto) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.924851] (agv_proto) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.925514] (agv_proto) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/x4/ros2_ws/src/example_project/agv_proto/include;$<BUILD_INTERFACE:/home/x4/ros2_ws/src/example_project/agv_proto/include>\n'}
+[3.925789] (agv_proto) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.927873] (-) TimerEvent: {}
+[3.930552] (agv_proto) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.930909] (agv_proto) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.933076] (agv_proto) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.935844] (agv_proto) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.938005] (agv_proto) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.942681] (agv_proto) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.942999] (agv_proto) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.945068] (agv_proto) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.952150] (agv_proto) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.028075] (-) TimerEvent: {}
+[4.129332] (-) TimerEvent: {}
+[4.230220] (-) TimerEvent: {}
+[4.242846] (agv_proto) StdoutLine: {'line': b'-- Generating done\n'}
+[4.281287] (agv_proto) StdoutLine: {'line': b'-- Build files have been written to: /home/x4/ros2_ws/src/build/agv_proto\n'}
+[4.317600] (agv_proto) JobEnded: {'identifier': 'agv_proto', 'rc': 'SIGINT'}
+[4.330361] (-) TimerEvent: {}
+[4.431037] (-) TimerEvent: {}
+[4.531844] (-) TimerEvent: {}
+[4.632663] (-) TimerEvent: {}
+[4.733547] (-) TimerEvent: {}
+[4.834324] (-) TimerEvent: {}
+[4.935129] (-) TimerEvent: {}
+[5.035930] (-) TimerEvent: {}
+[5.136742] (-) TimerEvent: {}
+[5.237596] (-) TimerEvent: {}
+[5.338461] (-) TimerEvent: {}
+[5.439218] (-) TimerEvent: {}
+[5.540053] (-) TimerEvent: {}
+[5.640872] (-) TimerEvent: {}
+[5.741810] (-) TimerEvent: {}
+[5.842619] (-) TimerEvent: {}
+[5.943482] (-) TimerEvent: {}
+[6.044319] (-) TimerEvent: {}
+[6.145180] (-) TimerEvent: {}
+[6.246009] (-) TimerEvent: {}
+[6.346844] (-) TimerEvent: {}
+[6.447677] (-) TimerEvent: {}
+[6.548503] (-) TimerEvent: {}
+[6.649359] (-) TimerEvent: {}
+[6.750180] (-) TimerEvent: {}
+[6.851073] (-) TimerEvent: {}
+[6.951970] (-) TimerEvent: {}
+[7.052794] (-) TimerEvent: {}
+[7.154001] (-) TimerEvent: {}
+[7.254862] (-) TimerEvent: {}
+[7.355685] (-) TimerEvent: {}
+[7.456805] (-) TimerEvent: {}
+[7.557706] (-) TimerEvent: {}
+[7.658521] (-) TimerEvent: {}
+[7.759355] (-) TimerEvent: {}
+[7.860139] (-) TimerEvent: {}
+[7.960909] (-) TimerEvent: {}
+[8.061740] (-) TimerEvent: {}
+[8.162576] (-) TimerEvent: {}
+[8.263414] (-) TimerEvent: {}
+[8.364275] (-) TimerEvent: {}
+[8.465207] (-) TimerEvent: {}
+[8.566483] (-) TimerEvent: {}
+[8.667332] (-) TimerEvent: {}
+[8.768180] (-) TimerEvent: {}
+[8.869063] (-) TimerEvent: {}
+[8.970010] (-) TimerEvent: {}
+[9.070863] (-) TimerEvent: {}
+[9.171755] (-) TimerEvent: {}
+[9.272559] (-) TimerEvent: {}
+[9.373277] (-) TimerEvent: {}
+[9.474050] (-) TimerEvent: {}
+[9.574876] (-) TimerEvent: {}
+[9.675703] (-) TimerEvent: {}
+[9.776515] (-) TimerEvent: {}
+[9.877337] (-) TimerEvent: {}
+[9.978189] (-) TimerEvent: {}
+[10.079027] (-) TimerEvent: {}
+[10.179909] (-) TimerEvent: {}
+[10.280771] (-) TimerEvent: {}
+[10.381945] (-) TimerEvent: {}
+[10.482785] (-) TimerEvent: {}
+[10.583608] (-) TimerEvent: {}
+[10.684468] (-) TimerEvent: {}
+[10.785545] (-) TimerEvent: {}
+[10.886443] (-) TimerEvent: {}
+[10.987230] (-) TimerEvent: {}
+[11.088096] (-) TimerEvent: {}
+[11.188950] (-) TimerEvent: {}
+[11.289844] (-) TimerEvent: {}
+[11.391072] (-) TimerEvent: {}
+[11.491940] (-) TimerEvent: {}
+[11.592810] (-) TimerEvent: {}
+[11.693727] (-) TimerEvent: {}
+[11.794571] (-) TimerEvent: {}
+[11.895418] (-) TimerEvent: {}
+[11.996272] (-) TimerEvent: {}
+[12.097215] (-) TimerEvent: {}
+[12.198072] (-) TimerEvent: {}
+[12.298926] (-) TimerEvent: {}
+[12.399769] (-) TimerEvent: {}
+[12.500655] (-) TimerEvent: {}
+[12.601536] (-) TimerEvent: {}
+[12.702399] (-) TimerEvent: {}
+[12.733585] (zed_components) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[12.734727] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[12.735077] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.735361] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.735627] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.735878] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.736120] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.736357] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.736637] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.736875] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.737145] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.737389] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48\x1b[m\x1b[K,\n'}
+[12.737619] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42\x1b[m\x1b[K,\n'}
+[12.737848] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18\x1b[m\x1b[K,\n'}
+[12.738094] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24\x1b[m\x1b[K,\n'}
+[12.738328] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15\x1b[m\x1b[K:\n'}
+[12.738557] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool stereolabs::ZedCamera::startCamera()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.738792] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.739049] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), \x1b[01;35m\x1b[K" * SVO resolution -> %dx%d"\x1b[m\x1b[K,\n'}
+[12.739280] (zed_components) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.739506] (zed_components) StderrLine: {'line': b' 4250 |       \x1b[32m\x1b[KmZed->getCameraInformation().camera_configuration.resolution.width\x1b[m\x1b[K,\n'}
+[12.739731] (zed_components) StderrLine: {'line': b'      |       \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.739954] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[12.740173] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[12.740396] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[12.740624] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), " * SVO resolution -> \x1b[01;36m\x1b[K%d\x1b[m\x1b[Kx%d",\n'}
+[12.740846] (zed_components) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[12.741147] (zed_components) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[12.741403] (zed_components) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[12.741673] (zed_components) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[12.741899] (zed_components) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[12.742151] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[12.742388] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.742617] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.742843] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.743068] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.743315] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.743542] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.743790] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.744052] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.744283] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.744506] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48\x1b[m\x1b[K,\n'}
+[12.744712] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42\x1b[m\x1b[K,\n'}
+[12.744917] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18\x1b[m\x1b[K,\n'}
+[12.745939] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24\x1b[m\x1b[K,\n'}
+[12.746242] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15\x1b[m\x1b[K:\n'}
+[12.746476] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.746738] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), \x1b[01;35m\x1b[K" * SVO resolution -> %dx%d"\x1b[m\x1b[K,\n'}
+[12.746976] (zed_components) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.747207] (zed_components) StderrLine: {'line': b' 4250 |       mZed->getCameraInformation().camera_configuration.resolution.width,\n'}
+[12.747436] (zed_components) StderrLine: {'line': b' 4251 |       \x1b[32m\x1b[KmZed->getCameraInformation().camera_configuration.resolution.height\x1b[m\x1b[K);\n'}
+[12.747708] (zed_components) StderrLine: {'line': b'      |       \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.747942] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[12.748175] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[12.748405] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[12.748635] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), " * SVO resolution -> %dx\x1b[01;36m\x1b[K%d\x1b[m\x1b[K",\n'}
+[12.748861] (zed_components) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[12.749117] (zed_components) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[12.749357] (zed_components) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[12.749583] (zed_components) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[12.802605] (-) TimerEvent: {}
+[12.903480] (-) TimerEvent: {}
+[13.004354] (-) TimerEvent: {}
+[13.105245] (-) TimerEvent: {}
+[13.206682] (-) TimerEvent: {}
+[13.307539] (-) TimerEvent: {}
+[13.408415] (-) TimerEvent: {}
+[13.509291] (-) TimerEvent: {}
+[13.610142] (-) TimerEvent: {}
+[13.711059] (-) TimerEvent: {}
+[13.811908] (-) TimerEvent: {}
+[13.912703] (-) TimerEvent: {}
+[14.014143] (-) TimerEvent: {}
+[14.114847] (-) TimerEvent: {}
+[14.215534] (-) TimerEvent: {}
+[14.316231] (-) TimerEvent: {}
+[14.416908] (-) TimerEvent: {}
+[14.517607] (-) TimerEvent: {}
+[14.618338] (-) TimerEvent: {}
+[14.719013] (-) TimerEvent: {}
+[14.819712] (-) TimerEvent: {}
+[14.920373] (-) TimerEvent: {}
+[15.021067] (-) TimerEvent: {}
+[15.121739] (-) TimerEvent: {}
+[15.222427] (-) TimerEvent: {}
+[15.323118] (-) TimerEvent: {}
+[15.423776] (-) TimerEvent: {}
+[15.524469] (-) TimerEvent: {}
+[15.625164] (-) TimerEvent: {}
+[15.725859] (-) TimerEvent: {}
+[15.826577] (-) TimerEvent: {}
+[15.927263] (-) TimerEvent: {}
+[16.028011] (-) TimerEvent: {}
+[16.128730] (-) TimerEvent: {}
+[16.229465] (-) TimerEvent: {}
+[16.330165] (-) TimerEvent: {}
+[16.430880] (-) TimerEvent: {}
+[16.531578] (-) TimerEvent: {}
+[16.632311] (-) TimerEvent: {}
+[16.733048] (-) TimerEvent: {}
+[16.833779] (-) TimerEvent: {}
+[16.934441] (-) TimerEvent: {}
+[17.035121] (-) TimerEvent: {}
+[17.135819] (-) TimerEvent: {}
+[17.236579] (-) TimerEvent: {}
+[17.337285] (-) TimerEvent: {}
+[17.437987] (-) TimerEvent: {}
+[17.538688] (-) TimerEvent: {}
+[17.639425] (-) TimerEvent: {}
+[17.740152] (-) TimerEvent: {}
+[17.840852] (-) TimerEvent: {}
+[17.941574] (-) TimerEvent: {}
+[18.042274] (-) TimerEvent: {}
+[18.142990] (-) TimerEvent: {}
+[18.243695] (-) TimerEvent: {}
+[18.344428] (-) TimerEvent: {}
+[18.445136] (-) TimerEvent: {}
+[18.545834] (-) TimerEvent: {}
+[18.646515] (-) TimerEvent: {}
+[18.747205] (-) TimerEvent: {}
+[18.847945] (-) TimerEvent: {}
+[18.948616] (-) TimerEvent: {}
+[19.049319] (-) TimerEvent: {}
+[19.150014] (-) TimerEvent: {}
+[19.250776] (-) TimerEvent: {}
+[19.351524] (-) TimerEvent: {}
+[19.452233] (-) TimerEvent: {}
+[19.552920] (-) TimerEvent: {}
+[19.653650] (-) TimerEvent: {}
+[19.754444] (-) TimerEvent: {}
+[19.855214] (-) TimerEvent: {}
+[19.955912] (-) TimerEvent: {}
+[20.056611] (-) TimerEvent: {}
+[20.157346] (-) TimerEvent: {}
+[20.258055] (-) TimerEvent: {}
+[20.358748] (-) TimerEvent: {}
+[20.459441] (-) TimerEvent: {}
+[20.560113] (-) TimerEvent: {}
+[20.660797] (-) TimerEvent: {}
+[20.761608] (-) TimerEvent: {}
+[20.862616] (-) TimerEvent: {}
+[20.963376] (-) TimerEvent: {}
+[21.064076] (-) TimerEvent: {}
+[21.164762] (-) TimerEvent: {}
+[21.265491] (-) TimerEvent: {}
+[21.366222] (-) TimerEvent: {}
+[21.466914] (-) TimerEvent: {}
+[21.567605] (-) TimerEvent: {}
+[21.668306] (-) TimerEvent: {}
+[21.769080] (-) TimerEvent: {}
+[21.869786] (-) TimerEvent: {}
+[21.970510] (-) TimerEvent: {}
+[22.071255] (-) TimerEvent: {}
+[22.171956] (-) TimerEvent: {}
+[22.273104] (-) TimerEvent: {}
+[22.373800] (-) TimerEvent: {}
+[22.474543] (-) TimerEvent: {}
+[22.575199] (-) TimerEvent: {}
+[22.675918] (-) TimerEvent: {}
+[22.776641] (-) TimerEvent: {}
+[22.877401] (-) TimerEvent: {}
+[22.978083] (-) TimerEvent: {}
+[23.078794] (-) TimerEvent: {}
+[23.179509] (-) TimerEvent: {}
+[23.280257] (-) TimerEvent: {}
+[23.380979] (-) TimerEvent: {}
+[23.481689] (-) TimerEvent: {}
+[23.582394] (-) TimerEvent: {}
+[23.683102] (-) TimerEvent: {}
+[23.783805] (-) TimerEvent: {}
+[23.884540] (-) TimerEvent: {}
+[23.985343] (-) TimerEvent: {}
+[24.086063] (-) TimerEvent: {}
+[24.186764] (-) TimerEvent: {}
+[24.287495] (-) TimerEvent: {}
+[24.388196] (-) TimerEvent: {}
+[24.488912] (-) TimerEvent: {}
+[24.589661] (-) TimerEvent: {}
+[24.690389] (-) TimerEvent: {}
+[24.791133] (-) TimerEvent: {}
+[24.891806] (-) TimerEvent: {}
+[24.992488] (-) TimerEvent: {}
+[25.093194] (-) TimerEvent: {}
+[25.193944] (-) TimerEvent: {}
+[25.294685] (-) TimerEvent: {}
+[25.395419] (-) TimerEvent: {}
+[25.496128] (-) TimerEvent: {}
+[25.596820] (-) TimerEvent: {}
+[25.697861] (-) TimerEvent: {}
+[25.798589] (-) TimerEvent: {}
+[25.899280] (-) TimerEvent: {}
+[26.000007] (-) TimerEvent: {}
+[26.100722] (-) TimerEvent: {}
+[26.201469] (-) TimerEvent: {}
+[26.302176] (-) TimerEvent: {}
+[26.402904] (-) TimerEvent: {}
+[26.503607] (-) TimerEvent: {}
+[26.604341] (-) TimerEvent: {}
+[26.705068] (-) TimerEvent: {}
+[26.805751] (-) TimerEvent: {}
+[26.906465] (-) TimerEvent: {}
+[27.007173] (-) TimerEvent: {}
+[27.107901] (-) TimerEvent: {}
+[27.208622] (-) TimerEvent: {}
+[27.309334] (-) TimerEvent: {}
+[27.410094] (-) TimerEvent: {}
+[27.510842] (-) TimerEvent: {}
+[27.611585] (-) TimerEvent: {}
+[27.712290] (-) TimerEvent: {}
+[27.812981] (-) TimerEvent: {}
+[27.913706] (-) TimerEvent: {}
+[28.014514] (-) TimerEvent: {}
+[28.115247] (-) TimerEvent: {}
+[28.215919] (-) TimerEvent: {}
+[28.316633] (-) TimerEvent: {}
+[28.417468] (-) TimerEvent: {}
+[28.518170] (-) TimerEvent: {}
+[28.618839] (-) TimerEvent: {}
+[28.719636] (-) TimerEvent: {}
+[28.820313] (-) TimerEvent: {}
+[28.921353] (-) TimerEvent: {}
+[29.022068] (-) TimerEvent: {}
+[29.122776] (-) TimerEvent: {}
+[29.223490] (-) TimerEvent: {}
+[29.324227] (-) TimerEvent: {}
+[29.424921] (-) TimerEvent: {}
+[29.525637] (-) TimerEvent: {}
+[29.626332] (-) TimerEvent: {}
+[29.727031] (-) TimerEvent: {}
+[29.827723] (-) TimerEvent: {}
+[29.928423] (-) TimerEvent: {}
+[30.029141] (-) TimerEvent: {}
+[30.129831] (-) TimerEvent: {}
+[30.230553] (-) TimerEvent: {}
+[30.331292] (-) TimerEvent: {}
+[30.432087] (-) TimerEvent: {}
+[30.532760] (-) TimerEvent: {}
+[30.633458] (-) TimerEvent: {}
+[30.734131] (-) TimerEvent: {}
+[30.834812] (-) TimerEvent: {}
+[30.935507] (-) TimerEvent: {}
+[31.036216] (-) TimerEvent: {}
+[31.136914] (-) TimerEvent: {}
+[31.237689] (-) TimerEvent: {}
+[31.338386] (-) TimerEvent: {}
+[31.439101] (-) TimerEvent: {}
+[31.539806] (-) TimerEvent: {}
+[31.640508] (-) TimerEvent: {}
+[31.741209] (-) TimerEvent: {}
+[31.841958] (-) TimerEvent: {}
+[31.942680] (-) TimerEvent: {}
+[32.043395] (-) TimerEvent: {}
+[32.144112] (-) TimerEvent: {}
+[32.244797] (-) TimerEvent: {}
+[32.345533] (-) TimerEvent: {}
+[32.446212] (-) TimerEvent: {}
+[32.546891] (-) TimerEvent: {}
+[32.647548] (-) TimerEvent: {}
+[32.748228] (-) TimerEvent: {}
+[32.848918] (-) TimerEvent: {}
+[32.949679] (-) TimerEvent: {}
+[33.050369] (-) TimerEvent: {}
+[33.151311] (-) TimerEvent: {}
+[33.252058] (-) TimerEvent: {}
+[33.352770] (-) TimerEvent: {}
+[33.453468] (-) TimerEvent: {}
+[33.554137] (-) TimerEvent: {}
+[33.654827] (-) TimerEvent: {}
+[33.755483] (-) TimerEvent: {}
+[33.856112] (-) TimerEvent: {}
+[33.956784] (-) TimerEvent: {}
+[34.057484] (-) TimerEvent: {}
+[34.158148] (-) TimerEvent: {}
+[34.258875] (-) TimerEvent: {}
+[34.359515] (-) TimerEvent: {}
+[34.460183] (-) TimerEvent: {}
+[34.560858] (-) TimerEvent: {}
+[34.661592] (-) TimerEvent: {}
+[34.762297] (-) TimerEvent: {}
+[34.862996] (-) TimerEvent: {}
+[34.963723] (-) TimerEvent: {}
+[35.064434] (-) TimerEvent: {}
+[35.165115] (-) TimerEvent: {}
+[35.265802] (-) TimerEvent: {}
+[35.366502] (-) TimerEvent: {}
+[35.467205] (-) TimerEvent: {}
+[35.567885] (-) TimerEvent: {}
+[35.668614] (-) TimerEvent: {}
+[35.769361] (-) TimerEvent: {}
+[35.870072] (-) TimerEvent: {}
+[35.970754] (-) TimerEvent: {}
+[36.071474] (-) TimerEvent: {}
+[36.172177] (-) TimerEvent: {}
+[36.272860] (-) TimerEvent: {}
+[36.373601] (-) TimerEvent: {}
+[36.474314] (-) TimerEvent: {}
+[36.575010] (-) TimerEvent: {}
+[36.675718] (-) TimerEvent: {}
+[36.776414] (-) TimerEvent: {}
+[36.877119] (-) TimerEvent: {}
+[36.977800] (-) TimerEvent: {}
+[37.078508] (-) TimerEvent: {}
+[37.179295] (-) TimerEvent: {}
+[37.279998] (-) TimerEvent: {}
+[37.380674] (-) TimerEvent: {}
+[37.481381] (-) TimerEvent: {}
+[37.582076] (-) TimerEvent: {}
+[37.682768] (-) TimerEvent: {}
+[37.783495] (-) TimerEvent: {}
+[37.884158] (-) TimerEvent: {}
+[37.984870] (-) TimerEvent: {}
+[38.085587] (-) TimerEvent: {}
+[38.186290] (-) TimerEvent: {}
+[38.286982] (-) TimerEvent: {}
+[38.387677] (-) TimerEvent: {}
+[38.488371] (-) TimerEvent: {}
+[38.589085] (-) TimerEvent: {}
+[38.689773] (-) TimerEvent: {}
+[38.790465] (-) TimerEvent: {}
+[38.891187] (-) TimerEvent: {}
+[38.991930] (-) TimerEvent: {}
+[39.092645] (-) TimerEvent: {}
+[39.193335] (-) TimerEvent: {}
+[39.294031] (-) TimerEvent: {}
+[39.394742] (-) TimerEvent: {}
+[39.495492] (-) TimerEvent: {}
+[39.596198] (-) TimerEvent: {}
+[39.696963] (-) TimerEvent: {}
+[39.797712] (-) TimerEvent: {}
+[39.898400] (-) TimerEvent: {}
+[39.999129] (-) TimerEvent: {}
+[40.100175] (-) TimerEvent: {}
+[40.200897] (-) TimerEvent: {}
+[40.301616] (-) TimerEvent: {}
+[40.402342] (-) TimerEvent: {}
+[40.503029] (-) TimerEvent: {}
+[40.603721] (-) TimerEvent: {}
+[40.704436] (-) TimerEvent: {}
+[40.805306] (-) TimerEvent: {}
+[40.906006] (-) TimerEvent: {}
+[41.006702] (-) TimerEvent: {}
+[41.107407] (-) TimerEvent: {}
+[41.208128] (-) TimerEvent: {}
+[41.308851] (-) TimerEvent: {}
+[41.409543] (-) TimerEvent: {}
+[41.510225] (-) TimerEvent: {}
+[41.610940] (-) TimerEvent: {}
+[41.711667] (-) TimerEvent: {}
+[41.812400] (-) TimerEvent: {}
+[41.913116] (-) TimerEvent: {}
+[42.014691] (-) TimerEvent: {}
+[42.115383] (-) TimerEvent: {}
+[42.216077] (-) TimerEvent: {}
+[42.316765] (-) TimerEvent: {}
+[42.417522] (-) TimerEvent: {}
+[42.518217] (-) TimerEvent: {}
+[42.618919] (-) TimerEvent: {}
+[42.719665] (-) TimerEvent: {}
+[42.820323] (-) TimerEvent: {}
+[42.920994] (-) TimerEvent: {}
+[43.021751] (-) TimerEvent: {}
+[43.122431] (-) TimerEvent: {}
+[43.223092] (-) TimerEvent: {}
+[43.323742] (-) TimerEvent: {}
+[43.424384] (-) TimerEvent: {}
+[43.525053] (-) TimerEvent: {}
+[43.625700] (-) TimerEvent: {}
+[43.726373] (-) TimerEvent: {}
+[43.827073] (-) TimerEvent: {}
+[43.927782] (-) TimerEvent: {}
+[44.028468] (-) TimerEvent: {}
+[44.129145] (-) TimerEvent: {}
+[44.229816] (-) TimerEvent: {}
+[44.330501] (-) TimerEvent: {}
+[44.431192] (-) TimerEvent: {}
+[44.531877] (-) TimerEvent: {}
+[44.632557] (-) TimerEvent: {}
+[44.733223] (-) TimerEvent: {}
+[44.833871] (-) TimerEvent: {}
+[44.934562] (-) TimerEvent: {}
+[45.035227] (-) TimerEvent: {}
+[45.135893] (-) TimerEvent: {}
+[45.236548] (-) TimerEvent: {}
+[45.337446] (-) TimerEvent: {}
+[45.438130] (-) TimerEvent: {}
+[45.538814] (-) TimerEvent: {}
+[45.639516] (-) TimerEvent: {}
+[45.740216] (-) TimerEvent: {}
+[45.840898] (-) TimerEvent: {}
+[45.941621] (-) TimerEvent: {}
+[46.042392] (-) TimerEvent: {}
+[46.143101] (-) TimerEvent: {}
+[46.243766] (-) TimerEvent: {}
+[46.344494] (-) TimerEvent: {}
+[46.445519] (-) TimerEvent: {}
+[46.547667] (-) TimerEvent: {}
+[46.648408] (-) TimerEvent: {}
+[46.749191] (-) TimerEvent: {}
+[46.850251] (-) TimerEvent: {}
+[46.951105] (-) TimerEvent: {}
+[47.052002] (-) TimerEvent: {}
+[47.152897] (-) TimerEvent: {}
+[47.254883] (-) TimerEvent: {}
+[47.355748] (-) TimerEvent: {}
+[47.456579] (-) TimerEvent: {}
+[47.557523] (-) TimerEvent: {}
+[47.658706] (-) TimerEvent: {}
+[47.759500] (-) TimerEvent: {}
+[47.860302] (-) TimerEvent: {}
+[47.961118] (-) TimerEvent: {}
+[48.062359] (-) TimerEvent: {}
+[48.163038] (-) TimerEvent: {}
+[48.263727] (-) TimerEvent: {}
+[48.364541] (-) TimerEvent: {}
+[48.465417] (-) TimerEvent: {}
+[48.566778] (-) TimerEvent: {}
+[48.667598] (-) TimerEvent: {}
+[48.768613] (-) TimerEvent: {}
+[48.869464] (-) TimerEvent: {}
+[48.970307] (-) TimerEvent: {}
+[49.071125] (-) TimerEvent: {}
+[49.171977] (-) TimerEvent: {}
+[49.272786] (-) TimerEvent: {}
+[49.373897] (-) TimerEvent: {}
+[49.474634] (-) TimerEvent: {}
+[49.575432] (-) TimerEvent: {}
+[49.676235] (-) TimerEvent: {}
+[49.777188] (-) TimerEvent: {}
+[49.878021] (-) TimerEvent: {}
+[49.978742] (-) TimerEvent: {}
+[50.079559] (-) TimerEvent: {}
+[50.180358] (-) TimerEvent: {}
+[50.281237] (-) TimerEvent: {}
+[50.382033] (-) TimerEvent: {}
+[50.482844] (-) TimerEvent: {}
+[50.583661] (-) TimerEvent: {}
+[50.684459] (-) TimerEvent: {}
+[50.785301] (-) TimerEvent: {}
+[50.886071] (-) TimerEvent: {}
+[50.986900] (-) TimerEvent: {}
+[51.087750] (-) TimerEvent: {}
+[51.188578] (-) TimerEvent: {}
+[51.289396] (-) TimerEvent: {}
+[51.390224] (-) TimerEvent: {}
+[51.491031] (-) TimerEvent: {}
+[51.592030] (-) TimerEvent: {}
+[51.692882] (-) TimerEvent: {}
+[51.793777] (-) TimerEvent: {}
+[51.894600] (-) TimerEvent: {}
+[51.995451] (-) TimerEvent: {}
+[52.096320] (-) TimerEvent: {}
+[52.197215] (-) TimerEvent: {}
+[52.298042] (-) TimerEvent: {}
+[52.398854] (-) TimerEvent: {}
+[52.499700] (-) TimerEvent: {}
+[52.600509] (-) TimerEvent: {}
+[52.701378] (-) TimerEvent: {}
+[52.802260] (-) TimerEvent: {}
+[52.903072] (-) TimerEvent: {}
+[53.003818] (-) TimerEvent: {}
+[53.104621] (-) TimerEvent: {}
+[53.205515] (-) TimerEvent: {}
+[53.306385] (-) TimerEvent: {}
+[53.407251] (-) TimerEvent: {}
+[53.508105] (-) TimerEvent: {}
+[53.609005] (-) TimerEvent: {}
+[53.709910] (-) TimerEvent: {}
+[53.810751] (-) TimerEvent: {}
+[53.911565] (-) TimerEvent: {}
+[54.012432] (-) TimerEvent: {}
+[54.113315] (-) TimerEvent: {}
+[54.215176] (-) TimerEvent: {}
+[54.316041] (-) TimerEvent: {}
+[54.417190] (-) TimerEvent: {}
+[54.517966] (-) TimerEvent: {}
+[54.618799] (-) TimerEvent: {}
+[54.719604] (-) TimerEvent: {}
+[54.820413] (-) TimerEvent: {}
+[54.921194] (-) TimerEvent: {}
+[55.021991] (-) TimerEvent: {}
+[55.122797] (-) TimerEvent: {}
+[55.223910] (-) TimerEvent: {}
+[55.324729] (-) TimerEvent: {}
+[55.425576] (-) TimerEvent: {}
+[55.526404] (-) TimerEvent: {}
+[55.627254] (-) TimerEvent: {}
+[55.728101] (-) TimerEvent: {}
+[55.828936] (-) TimerEvent: {}
+[55.929969] (-) TimerEvent: {}
+[56.030811] (-) TimerEvent: {}
+[56.131652] (-) TimerEvent: {}
+[56.232736] (-) TimerEvent: {}
+[56.333534] (-) TimerEvent: {}
+[56.434330] (-) TimerEvent: {}
+[56.535129] (-) TimerEvent: {}
+[56.635930] (-) TimerEvent: {}
+[56.736764] (-) TimerEvent: {}
+[56.837654] (-) TimerEvent: {}
+[56.938469] (-) TimerEvent: {}
+[57.039256] (-) TimerEvent: {}
+[57.140056] (-) TimerEvent: {}
+[57.240868] (-) TimerEvent: {}
+[57.341717] (-) TimerEvent: {}
+[57.442557] (-) TimerEvent: {}
+[57.543402] (-) TimerEvent: {}
+[57.644254] (-) TimerEvent: {}
+[57.745110] (-) TimerEvent: {}
+[57.845938] (-) TimerEvent: {}
+[57.946739] (-) TimerEvent: {}
+[58.047535] (-) TimerEvent: {}
+[58.148366] (-) TimerEvent: {}
+[58.249207] (-) TimerEvent: {}
+[58.350946] (-) TimerEvent: {}
+[58.451772] (-) TimerEvent: {}
+[58.552579] (-) TimerEvent: {}
+[58.653525] (-) TimerEvent: {}
+[58.754347] (-) TimerEvent: {}
+[58.855209] (-) TimerEvent: {}
+[58.957502] (-) TimerEvent: {}
+[59.058324] (-) TimerEvent: {}
+[59.159132] (-) TimerEvent: {}
+[59.259926] (-) TimerEvent: {}
+[59.360608] (-) TimerEvent: {}
+[59.461443] (-) TimerEvent: {}
+[59.562234] (-) TimerEvent: {}
+[59.663047] (-) TimerEvent: {}
+[59.764229] (-) TimerEvent: {}
+[59.865088] (-) TimerEvent: {}
+[59.965883] (-) TimerEvent: {}
+[60.066730] (-) TimerEvent: {}
+[60.167569] (-) TimerEvent: {}
+[60.268400] (-) TimerEvent: {}
+[60.369247] (-) TimerEvent: {}
+[60.470105] (-) TimerEvent: {}
+[60.570958] (-) TimerEvent: {}
+[60.671791] (-) TimerEvent: {}
+[60.772626] (-) TimerEvent: {}
+[60.873526] (-) TimerEvent: {}
+[60.974329] (-) TimerEvent: {}
+[61.075138] (-) TimerEvent: {}
+[61.175984] (-) TimerEvent: {}
+[61.276809] (-) TimerEvent: {}
+[61.377634] (-) TimerEvent: {}
+[61.478498] (-) TimerEvent: {}
+[61.579335] (-) TimerEvent: {}
+[61.680442] (-) TimerEvent: {}
+[61.781331] (-) TimerEvent: {}
+[61.882297] (-) TimerEvent: {}
+[61.982981] (-) TimerEvent: {}
+[62.083639] (-) TimerEvent: {}
+[62.184318] (-) TimerEvent: {}
+[62.284994] (-) TimerEvent: {}
+[62.385702] (-) TimerEvent: {}
+[62.486373] (-) TimerEvent: {}
+[62.587054] (-) TimerEvent: {}
+[62.687731] (-) TimerEvent: {}
+[62.788387] (-) TimerEvent: {}
+[62.889085] (-) TimerEvent: {}
+[62.989749] (-) TimerEvent: {}
+[63.090415] (-) TimerEvent: {}
+[63.191111] (-) TimerEvent: {}
+[63.291783] (-) TimerEvent: {}
+[63.392618] (-) TimerEvent: {}
+[63.493400] (-) TimerEvent: {}
+[63.594110] (-) TimerEvent: {}
+[63.694821] (-) TimerEvent: {}
+[63.795518] (-) TimerEvent: {}
+[63.896213] (-) TimerEvent: {}
+[63.996909] (-) TimerEvent: {}
+[64.097646] (-) TimerEvent: {}
+[64.198334] (-) TimerEvent: {}
+[64.299036] (-) TimerEvent: {}
+[64.399706] (-) TimerEvent: {}
+[64.500397] (-) TimerEvent: {}
+[64.601124] (-) TimerEvent: {}
+[64.701840] (-) TimerEvent: {}
+[64.802549] (-) TimerEvent: {}
+[64.903263] (-) TimerEvent: {}
+[65.003949] (-) TimerEvent: {}
+[65.104622] (-) TimerEvent: {}
+[65.205382] (-) TimerEvent: {}
+[65.306064] (-) TimerEvent: {}
+[65.406771] (-) TimerEvent: {}
+[65.507460] (-) TimerEvent: {}
+[65.608153] (-) TimerEvent: {}
+[65.708871] (-) TimerEvent: {}
+[65.809586] (-) TimerEvent: {}
+[65.910256] (-) TimerEvent: {}
+[66.010918] (-) TimerEvent: {}
+[66.111601] (-) TimerEvent: {}
+[66.212309] (-) TimerEvent: {}
+[66.312994] (-) TimerEvent: {}
+[66.413697] (-) TimerEvent: {}
+[66.514911] (-) TimerEvent: {}
+[66.615559] (-) TimerEvent: {}
+[66.716222] (-) TimerEvent: {}
+[66.816845] (-) TimerEvent: {}
+[66.917786] (-) TimerEvent: {}
+[67.018475] (-) TimerEvent: {}
+[67.119127] (-) TimerEvent: {}
+[67.219825] (-) TimerEvent: {}
+[67.320484] (-) TimerEvent: {}
+[67.421163] (-) TimerEvent: {}
+[67.521818] (-) TimerEvent: {}
+[67.622482] (-) TimerEvent: {}
+[67.723170] (-) TimerEvent: {}
+[67.823843] (-) TimerEvent: {}
+[67.924751] (-) TimerEvent: {}
+[68.025443] (-) TimerEvent: {}
+[68.126127] (-) TimerEvent: {}
+[68.226830] (-) TimerEvent: {}
+[68.327500] (-) TimerEvent: {}
+[68.428178] (-) TimerEvent: {}
+[68.528861] (-) TimerEvent: {}
+[68.629542] (-) TimerEvent: {}
+[68.730215] (-) TimerEvent: {}
+[68.830884] (-) TimerEvent: {}
+[68.931541] (-) TimerEvent: {}
+[69.032275] (-) TimerEvent: {}
+[69.132945] (-) TimerEvent: {}
+[69.233627] (-) TimerEvent: {}
+[69.334286] (-) TimerEvent: {}
+[69.434930] (-) TimerEvent: {}
+[69.535611] (-) TimerEvent: {}
+[69.636302] (-) TimerEvent: {}
+[69.736977] (-) TimerEvent: {}
+[69.837675] (-) TimerEvent: {}
+[69.938351] (-) TimerEvent: {}
+[70.039013] (-) TimerEvent: {}
+[70.139705] (-) TimerEvent: {}
+[70.240417] (-) TimerEvent: {}
+[70.341157] (-) TimerEvent: {}
+[70.441860] (-) TimerEvent: {}
+[70.542560] (-) TimerEvent: {}
+[70.643234] (-) TimerEvent: {}
+[70.743910] (-) TimerEvent: {}
+[70.844611] (-) TimerEvent: {}
+[70.945318] (-) TimerEvent: {}
+[71.045992] (-) TimerEvent: {}
+[71.146670] (-) TimerEvent: {}
+[71.247347] (-) TimerEvent: {}
+[71.347975] (-) TimerEvent: {}
+[71.448625] (-) TimerEvent: {}
+[71.549309] (-) TimerEvent: {}
+[71.649979] (-) TimerEvent: {}
+[71.750645] (-) TimerEvent: {}
+[71.851314] (-) TimerEvent: {}
+[71.951996] (-) TimerEvent: {}
+[72.052678] (-) TimerEvent: {}
+[72.153362] (-) TimerEvent: {}
+[72.254033] (-) TimerEvent: {}
+[72.262810] (zed_components) StderrLine: {'line': b"gmake[2]: *** Deleting file 'CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o'\n"}
+[72.269150] (zed_components) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/zed_camera_component.dir/build.make:118: CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o] Interrupt\n'}
+[72.269934] (zed_components) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:166: CMakeFiles/zed_camera_component.dir/all] Interrupt\n'}
+[72.270516] (zed_components) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[72.354233] (-) TimerEvent: {}
+[72.455096] (-) TimerEvent: {}
+[72.555919] (-) TimerEvent: {}
+[72.571796] (zed_components) JobEnded: {'identifier': 'zed_components', 'rc': 'SIGINT'}
+[72.575815] (rviz_plugin_zed_od) JobSkipped: {'identifier': 'rviz_plugin_zed_od'}
+[72.575969] (zed_tutorial_depth) JobSkipped: {'identifier': 'zed_tutorial_depth'}
+[72.576059] (zed_tutorial_pos_tracking) JobSkipped: {'identifier': 'zed_tutorial_pos_tracking'}
+[72.576140] (zed_tutorial_video) JobSkipped: {'identifier': 'zed_tutorial_video'}
+[72.576215] (zed_aruco_localization) JobSkipped: {'identifier': 'zed_aruco_localization'}
+[72.576287] (zed_rgb_convert) JobSkipped: {'identifier': 'zed_rgb_convert'}
+[72.576359] (zed_topic_benchmark_component) JobSkipped: {'identifier': 'zed_topic_benchmark_component'}
+[72.576429] (zed_wrapper) JobSkipped: {'identifier': 'zed_wrapper'}
+[72.576498] (tracked_robot_nav) JobSkipped: {'identifier': 'tracked_robot_nav'}
+[72.576567] (zed_depth_to_laserscan) JobSkipped: {'identifier': 'zed_depth_to_laserscan'}
+[72.576634] (zed_display_rviz2) JobSkipped: {'identifier': 'zed_display_rviz2'}
+[72.576702] (zed_multi_camera) JobSkipped: {'identifier': 'zed_multi_camera'}
+[72.576768] (zed_navigation_config) JobSkipped: {'identifier': 'zed_navigation_config'}
+[72.576835] (zed_robot_integration) JobSkipped: {'identifier': 'zed_robot_integration'}
+[72.576902] (zed_ros2) JobSkipped: {'identifier': 'zed_ros2'}
+[72.576968] (zed_topic_benchmark) JobSkipped: {'identifier': 'zed_topic_benchmark'}
+[72.577071] (tracked_robot_simulation) JobSkipped: {'identifier': 'tracked_robot_simulation'}
+[72.577148] (zed_ipc) JobSkipped: {'identifier': 'zed_ipc'}
+[72.577220] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+[0.189s] Invoking command in '/home/x4/ros2_ws/src/build/tracked_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/tracked_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/tracked_robot_description
+[0.340s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.019s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.415s] -- Configuring done
+[1.468s] -- Generating done
+[1.487s] -- Build files have been written to: /home/x4/ros2_ws/src/build/tracked_robot_description
+[1.518s] Invoked command in '/home/x4/ros2_ws/src/build/tracked_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/tracked_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/tracked_robot_description
+[1.519s] Invoking command in '/home/x4/ros2_ws/src/build/tracked_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/tracked_robot_description -- -j8 -l8
+[4.167s] Invoked command in '/home/x4/ros2_ws/src/build/tracked_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/tracked_robot_description -- -j8 -l8
+[4.220s] Invoking command in '/home/x4/ros2_ws/src/build/tracked_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/x4/ros2_ws/src/build/tracked_robot_description
+[5.470s] -- Install configuration: ""
+[5.470s] -- Execute custom install script
+[5.470s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/urdf/tracked_robot.urdf
+[5.471s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/urdf/tracked_robot.urdf.xacro
+[5.471s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/launch/robot_state_publisher.launch.py
+[5.471s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/ament_index/resource_index/package_run_dependencies/tracked_robot_description
+[5.471s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/ament_index/resource_index/parent_prefix_path/tracked_robot_description
+[5.471s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/environment/ament_prefix_path.sh
+[5.471s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/environment/ament_prefix_path.dsv
+[5.472s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/environment/path.sh
+[5.472s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/environment/path.dsv
+[5.472s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/local_setup.bash
+[5.472s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/local_setup.sh
+[5.472s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/local_setup.zsh
+[5.473s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/local_setup.dsv
+[5.474s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/package.dsv
+[5.474s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/ament_index/resource_index/packages/tracked_robot_description
+[5.498s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/cmake/tracked_robot_descriptionConfig.cmake
+[5.581s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/cmake/tracked_robot_descriptionConfig-version.cmake
+[5.659s] -- Symlinking: /home/x4/ros2_ws/src/install/tracked_robot_description/share/tracked_robot_description/package.xml

@@ -1,0 +1,4 @@
+[ 40%] Built target explore
+[ 60%] Built target gtest
+[ 80%] Built target gtest_main
+[100%] Built target test_explore

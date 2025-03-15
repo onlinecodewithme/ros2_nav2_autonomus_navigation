@@ -1,0 +1,5 @@
+[0.145s] Invoking command in '/home/x4/ros2_ws/src/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/explore_lite -- -j8 -l8
+[0.404s] [ 40%] Built target explore
+[0.487s] [ 60%] Built target gtest
+[0.565s] [ 80%] Built target gtest_main
+[0.633s] [100%] Built target test_explore

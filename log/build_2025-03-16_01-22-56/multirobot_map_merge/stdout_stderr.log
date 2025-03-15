@@ -1,0 +1,6 @@
+[ 33%] Built target combine_grids
+[ 50%] Built target gtest
+[35m[1mConsolidate compiler generated dependencies of target map_merge[0m
+[ 66%] Built target map_merge
+[ 83%] Built target gtest_main
+[100%] Built target test_merging_pipeline

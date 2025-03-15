@@ -6,7 +6,7 @@ amcl:
     alpha3: 0.2
     alpha4: 0.2
     alpha5: 0.2
-    base_frame_id: "base_link"
+    base_frame_id: "base_footprint"
     beam_skip_distance: 0.5
     beam_skip_threshold: 0.3
     do_beamskip: false
@@ -25,7 +25,7 @@ amcl:
     recovery_alpha_slow: 0.0
     recovery_alpha_fast: 0.0
     resample_interval: 1
-    robot_model_type: "differential"
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"
     save_pose_rate: 0.5
     sigma_hit: 0.2
     tf_broadcast: true
@@ -42,11 +42,13 @@ bt_navigator:
   ros__parameters:
     use_sim_time: False
     global_frame: map
-    robot_base_frame: base_link
+    robot_base_frame: base_footprint
     odom_topic: /odom
-    default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
+    default_bt_xml_filename: "navigate_to_pose_w_replanning_and_recovery.xml"
+    bt_xml_filename: "/opt/ros/humble/share/nav2_bt_navigator/behavior_trees/navigate_to_pose_w_replanning_and_recovery.xml"
     plugin_lib_names:
     - nav2_compute_path_to_pose_action_bt_node
+    - nav2_compute_path_through_poses_action_bt_node
     - nav2_follow_path_action_bt_node
     - nav2_back_up_action_bt_node
     - nav2_spin_action_bt_node
@@ -68,6 +70,14 @@ bt_navigator:
     - nav2_transform_available_condition_bt_node
     - nav2_time_expired_condition_bt_node
     - nav2_distance_traveled_condition_bt_node
+    - nav2_single_trigger_bt_node
+    - nav2_is_battery_low_condition_bt_node
+    - nav2_navigate_through_poses_action_bt_node
+    - nav2_navigate_to_pose_action_bt_node
+    - nav2_remove_passed_goals_action_bt_node
+    - nav2_planner_selector_bt_node
+    - nav2_controller_selector_bt_node
+    - nav2_goal_checker_selector_bt_node
 
 controller_server:
   ros__parameters:
@@ -136,7 +146,7 @@ local_costmap:
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
-      robot_base_frame: base_link
+      robot_base_frame: base_footprint
       use_sim_time: False
       rolling_window: true
       width: 3
@@ -148,42 +158,55 @@ local_costmap:
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
-        observation_sources: scan
+        observation_sources: point_cloud
         footprint_clearing_enabled: true
         max_obstacle_height: 2.0
+        origin_z: -1.5  # Added to match voxel_layer settings
+        z_resolution: 0.1
+        z_voxels: 35    # Added to match voxel_layer settings
         combination_method: 1
-        scan:
+        point_cloud:
           topic: /zed2i/zed_node/point_cloud/cloud_registered
-          sensor_frame: zed2i_camera_center
+          sensor_frame: zed2i_left_camera_optical_frame
           data_type: "PointCloud2"
           max_obstacle_height: 2.0
+          min_obstacle_height: 0.1
           clearing: True
           marking: True
           expected_update_rate: 0.0
           obstacle_range: 4.5
           raytrace_range: 5.0
+          inf_is_valid: false
+          voxel_min_points: 0
+          filter: "voxel"
+          voxel_size: 0.1
           
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
         publish_voxel_map: True
-        origin_z: 0.0
-        z_resolution: 0.05
-        z_voxels: 16
+        origin_z: -1.5  # Changed from 0.0 to accommodate sensor at z=-1.16
+        z_resolution: 0.1
+        z_voxels: 35    # Increased to cover the extended z range
         max_obstacle_height: 2.0
-        unknown_threshold: 15
+        unknown_threshold: 8
         mark_threshold: 0
-        observation_sources: pointcloud
-        pointcloud:
+        observation_sources: point_cloud
+        point_cloud:
           topic: /zed2i/zed_node/point_cloud/cloud_registered
-          sensor_frame: zed2i_camera_center
+          sensor_frame: zed2i_left_camera_optical_frame
           data_type: "PointCloud2"
           max_obstacle_height: 2.0
+          min_obstacle_height: 0.1
           clearing: True
           marking: True
           expected_update_rate: 0.0
           obstacle_range: 4.5
           raytrace_range: 5.0
+          inf_is_valid: false
+          voxel_min_points: 0
+          filter: "voxel"
+          voxel_size: 0.1
           
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
@@ -202,7 +225,7 @@ global_costmap:
       update_frequency: 1.0
       publish_frequency: 1.0
       global_frame: map
-      robot_base_frame: base_link
+      robot_base_frame: base_footprint
       use_sim_time: False
       robot_radius: 0.3
       footprint: "[ [0.25, 0.15], [0.25, -0.15], [-0.25, -0.15], [-0.25, 0.15] ]"
@@ -212,20 +235,28 @@ global_costmap:
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
-        observation_sources: scan
+        observation_sources: point_cloud
         footprint_clearing_enabled: true
         max_obstacle_height: 2.0
+        origin_z: -1.5  # Added to accommodate sensor at z=-1.16
+        z_resolution: 0.1
+        z_voxels: 35    # Added to cover the extended z range
         combination_method: 1
-        scan:
+        point_cloud:
           topic: /zed2i/zed_node/point_cloud/cloud_registered
-          sensor_frame: zed2i_camera_center
+          sensor_frame: zed2i_left_camera_optical_frame
           data_type: "PointCloud2"
           max_obstacle_height: 2.0
+          min_obstacle_height: 0.1
           clearing: True
           marking: True
           expected_update_rate: 0.0
           obstacle_range: 4.5
           raytrace_range: 5.0
+          inf_is_valid: false
+          voxel_min_points: 0
+          filter: "voxel"
+          voxel_size: 0.1
           
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
@@ -241,7 +272,7 @@ global_costmap:
 map_server:
   ros__parameters:
     use_sim_time: False
-    yaml_filename: "map.yaml"
+    yaml_filename: "/home/x4/ros2_ws/install/tracked_robot_nav/share/tracked_robot_nav/maps/map.yaml"
 
 map_saver:
   ros__parameters:
@@ -274,7 +305,7 @@ recoveries_server:
     wait:
       plugin: "nav2_recoveries/Wait"
     global_frame: odom
-    robot_base_frame: base_link
+    robot_base_frame: base_footprint
     transform_timeout: 0.1
     use_sim_time: False
     simulate_ahead_time: 2.0
@@ -286,6 +317,6 @@ slam_toolbox:
   ros__parameters:
     use_sim_time: False
     map_frame: map
-    base_frame: base_link
+    base_frame: base_footprint
     odom_frame: odom
     scan_topic: /zed2i/zed_node/point_cloud/cloud_registered

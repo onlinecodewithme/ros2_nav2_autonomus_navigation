@@ -1,0 +1,1 @@
+Invoking command in '/home/x4/ros2_ws/src/build/agv_proto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/agv_proto -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/agv_proto

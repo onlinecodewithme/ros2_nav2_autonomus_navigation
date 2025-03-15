@@ -32,7 +32,7 @@ public:
     this->declare_parameter<double>("encoder_resolution", 360.0); // Ticks per revolution
     this->declare_parameter<double>("wheel_radius", 0.05);     // Track wheel radius in meters
     this->declare_parameter<std::string>("odom_frame", "odom");
-    this->declare_parameter<std::string>("base_frame", "base_link");
+    this->declare_parameter<std::string>("base_frame", "base_footprint");
     
     // Get parameters
     wheel_separation_ = this->get_parameter("wheel_separation").as_double();

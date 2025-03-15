@@ -12,6 +12,8 @@ This project provides a complete software stack for a tracked robot platform, in
 - ZED camera integration
 - Gazebo simulation environment
 - Autonomous exploration capabilities
+- Keepout zones and speed limits for navigation
+- Autonomous navigation with obstacle avoidance
 
 The system is designed to work with a tracked robot platform equipped with a ZED2i stereo camera for perception. The robot can be controlled manually or autonomously navigate through unknown environments using SLAM for mapping and localization.
 
@@ -31,6 +33,8 @@ The software is built on ROS 2 Humble and follows a modular design:
 3. **Navigation**: Nav2 stack handles path planning and obstacle avoidance
 4. **Control**: Custom controllers translate velocity commands to track movements
 5. **Simulation**: Ignition Gazebo provides a realistic testing environment
+6. **Exploration**: Autonomous exploration capabilities for unknown environments
+7. **Advanced Navigation**: Support for keepout zones and speed limits
 
 ## Package Structure
 
@@ -97,25 +101,57 @@ To launch the complete robot stack on real hardware:
 
 ```bash
 source ~/ros2_ws/install/setup.bash
+export DISPLAY=:1
 ros2 launch tracked_robot_nav robot_complete.launch.py
 ```
 
 #### Mapping with SLAM
 
 ```bash
+export DISPLAY=:1
 ros2 launch tracked_robot_nav mapping.launch.py
 ```
 
 For mapping with ZED camera:
 
 ```bash
+export DISPLAY=:1
 ros2 launch tracked_robot_nav mapping_zed.launch.py
+```
+
+#### Autonomous Navigation
+
+```bash
+export DISPLAY=:1
+ros2 launch tracked_robot_nav autonomous_nav.launch.py
 ```
 
 #### Navigation with Existing Map
 
 ```bash
+export DISPLAY=:1
 ros2 launch tracked_robot_nav navigation.launch.py map:=/path/to/map.yaml
+```
+
+#### Navigation with Keepout Zones
+
+```bash
+export DISPLAY=:1
+ros2 launch tracked_robot_nav keepout_navigation.launch.py
+```
+
+#### Navigation with Speed Limits
+
+```bash
+export DISPLAY=:1
+ros2 launch tracked_robot_nav speedlimit_navigation.launch.py
+```
+
+#### Autonomous Exploration
+
+```bash
+export DISPLAY=:1
+ros2 launch tracked_robot_nav exploration.launch.py
 ```
 
 ### Simulation
@@ -195,6 +231,8 @@ The tracked robot's physical parameters can be configured in:
 Navigation parameters are defined in:
 - `tracked_robot_nav/config/nav2_params.yaml`: Navigation stack parameters
 - `tracked_robot_nav/config/slam_params.yaml`: SLAM parameters
+- `tracked_robot_nav/config/keepout_nav2_params.yaml`: Keepout zone parameters
+- `tracked_robot_nav/config/speedlimit_nav2_params.yaml`: Speed limit parameters
 
 ### ZED Camera Configuration
 
@@ -207,6 +245,50 @@ ZED camera parameters can be configured in:
 The simulation environment can be modified in:
 - `tracked_robot_simulation/worlds/unknown_environment.world`: Gazebo world file
 - `tracked_robot_simulation/config/simulation.rviz`: RViz configuration
+
+## Advanced Navigation Features
+
+### Keepout Zones
+
+Keepout zones allow you to define areas that the robot should avoid during navigation. This is useful for marking dangerous or restricted areas.
+
+To create a keepout zone map:
+1. Start with a regular map of your environment
+2. Use an image editor to mark areas to avoid with a specific color (usually black)
+3. Save the map as `map_keepout.pgm` in the `tracked_robot_nav/maps` directory
+4. Update the `map_keepout.yaml` file with the correct parameters
+
+To use keepout zones:
+```bash
+export DISPLAY=:1
+ros2 launch tracked_robot_nav keepout_navigation.launch.py
+```
+
+### Speed Limits
+
+Speed limit zones allow you to define areas where the robot should move at a reduced speed. This is useful for crowded areas or narrow passages.
+
+To create a speed limit map:
+1. Start with a regular map of your environment
+2. Use an image editor to mark areas with speed limits using different grayscale values (darker = slower)
+3. Save the map as `map_speedlimit.pgm` in the `tracked_robot_nav/maps` directory
+4. Update the `map_speedlimit.yaml` file with the correct parameters
+
+To use speed limits:
+```bash
+export DISPLAY=:1
+ros2 launch tracked_robot_nav speedlimit_navigation.launch.py
+```
+
+### Autonomous Exploration
+
+The autonomous exploration feature allows the robot to explore unknown environments and build a map automatically.
+
+To use autonomous exploration:
+```bash
+export DISPLAY=:1
+ros2 launch tracked_robot_nav exploration.launch.py
+```
 
 ## Saving and Loading Maps
 

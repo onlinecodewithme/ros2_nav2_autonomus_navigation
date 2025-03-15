@@ -1,0 +1,67 @@
+[0.143s] Invoking command in '/home/x4/ros2_ws/src/build/zed_components': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/zed_components -- -j8 -l8
+[0.296s] [35m[1mConsolidate compiler generated dependencies of target zed_camera_component[0m
+[0.378s] [ 10%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o[0m
+[12.729s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.729s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.731s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.732s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.732s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+[12.732s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[12.732s]                  from [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18[m[K,
+[12.732s]                  from [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24[m[K,
+[12.733s]                  from [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15[m[K:
+[12.733s] [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:[m[K In member function ‘[01m[Kbool stereolabs::ZedCamera::startCamera()[m[K’:
+[12.733s] [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[12.733s]  4249 |       get_logger(), [01;35m[K" * SVO resolution -> %dx%d"[m[K,
+[12.734s]       |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.734s]  4250 |       [32m[KmZed->getCameraInformation().camera_configuration.resolution.width[m[K,
+[12.734s]       |       [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.734s]       |                                                                    [32m[K|[m[K
+[12.735s]       |                                                                    [32m[Ksize_t {aka long unsigned int}[m[K
+[12.735s] [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:44:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[12.735s]  4249 |       get_logger(), " * SVO resolution -> [01;36m[K%d[m[Kx%d",
+[12.735s]       |                                           [01;36m[K~^[m[K
+[12.736s]       |                                            [01;36m[K|[m[K
+[12.736s]       |                                            [01;36m[Kint[m[K
+[12.736s]       |                                           [32m[K%ld[m[K
+[12.736s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[12.737s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.737s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.737s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.737s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.737s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.738s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.738s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.738s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.738s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.739s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.739s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+[12.739s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[12.740s]                  from [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18[m[K,
+[12.740s]                  from [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24[m[K,
+[12.741s]                  from [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15[m[K:
+[12.741s] [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[12.741s]  4249 |       get_logger(), [01;35m[K" * SVO resolution -> %dx%d"[m[K,
+[12.741s]       |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.742s]  4250 |       mZed->getCameraInformation().camera_configuration.resolution.width,
+[12.742s]  4251 |       [32m[KmZed->getCameraInformation().camera_configuration.resolution.height[m[K);
+[12.742s]       |       [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.742s]       |                                                                    [32m[K|[m[K
+[12.743s]       |                                                                    [32m[Ksize_t {aka long unsigned int}[m[K
+[12.743s] [01m[K/home/x4/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:47:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[12.743s]  4249 |       get_logger(), " * SVO resolution -> %dx[01;36m[K%d[m[K",
+[12.743s]       |                                              [01;36m[K~^[m[K
+[12.743s]       |                                               [01;36m[K|[m[K
+[12.744s]       |                                               [01;36m[Kint[m[K
+[12.744s]       |                                              [32m[K%ld[m[K
+[72.257s] gmake[2]: *** Deleting file 'CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o'
+[72.264s] gmake[2]: *** [CMakeFiles/zed_camera_component.dir/build.make:118: CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o] Interrupt
+[72.264s] gmake[1]: *** [CMakeFiles/Makefile2:166: CMakeFiles/zed_camera_component.dir/all] Interrupt
+[72.265s] gmake: *** [Makefile:146: all] Interrupt

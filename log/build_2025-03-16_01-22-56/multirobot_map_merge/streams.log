@@ -1,0 +1,7 @@
+[0.151s] Invoking command in '/home/x4/ros2_ws/src/build/multirobot_map_merge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/multirobot_map_merge -- -j8 -l8
+[0.330s] [ 33%] Built target combine_grids
+[0.424s] [ 50%] Built target gtest
+[0.477s] [35m[1mConsolidate compiler generated dependencies of target map_merge[0m
+[0.557s] [ 66%] Built target map_merge
+[0.613s] [ 83%] Built target gtest_main
+[0.683s] [100%] Built target test_merging_pipeline

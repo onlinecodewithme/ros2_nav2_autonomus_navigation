@@ -1,0 +1,145 @@
+[0.087s] Invoking command in '/home/x4/ros2_ws/src/build/agv_proto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/agv_proto -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/agv_proto
+[0.265s] -- The C compiler identification is GNU 11.4.0
+[0.426s] -- The CXX compiler identification is GNU 11.4.0
+[0.451s] -- Detecting C compiler ABI info
+[0.710s] -- Detecting C compiler ABI info - done
+[0.745s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.746s] -- Detecting C compile features
+[0.746s] -- Detecting C compile features - done
+[0.754s] -- Detecting CXX compiler ABI info
+[1.009s] -- Detecting CXX compiler ABI info - done
+[1.040s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.040s] -- Detecting CXX compile features
+[1.041s] -- Detecting CXX compile features - done
+[1.052s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.692s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.120s] -- Found hardware_interface: 2.48.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[2.296s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.318s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.353s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.396s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.454s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.033s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.046s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.126s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.342s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.350s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.402s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.410s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.436s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[3.473s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.515s] -- Looking for pthread.h
+[3.763s] -- Looking for pthread.h - found
+[3.763s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.984s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.985s] -- Found Threads: TRUE  
+[4.150s] -- Found ros_odrive_msg: 0.0.0 (/home/x4/ros2_ws/install/ros_odrive_msg/share/ros_odrive_msg/cmake)
+[4.199s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[4.218s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[4.330s] -- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.450s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.716s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.726s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.727s] -- Configured cppcheck include dirs: /home/x4/ros2_ws/src/example_project/agv_proto/include;$<BUILD_INTERFACE:/home/x4/ros2_ws/src/example_project/agv_proto/include>
+[4.727s] -- Configured cppcheck exclude dirs and/or files: 
+[4.734s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.735s] -- Configured cpplint exclude dirs and/or files: 
+[4.735s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.737s] -- Added test 'lint_cmake' to check CMake code style
+[4.739s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.747s] -- Added test 'uncrustify' to check C / C++ code style
+[4.747s] -- Configured uncrustify additional arguments: 
+[4.749s] -- Added test 'xmllint' to check XML markup files
+[4.757s] -- Configuring done
+[5.110s] -- Generating done
+[5.152s] -- Build files have been written to: /home/x4/ros2_ws/src/build/agv_proto
+[5.201s] Invoked command in '/home/x4/ros2_ws/src/build/agv_proto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/agv_proto -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/agv_proto
+[5.207s] Invoking command in '/home/x4/ros2_ws/src/build/agv_proto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/agv_proto -- -j8 -l8
+[5.705s] [ 16%] [32mBuilding CXX object CMakeFiles/my_nav2_goal_client.dir/src/my_nav2_goal_client.cpp.o[0m
+[5.705s] [ 33%] [32mBuilding CXX object CMakeFiles/agv_diff_control.dir/src/robot_hardware_interface_agv.cpp.o[0m
+[5.705s] [ 50%] [32mBuilding CXX object CMakeFiles/agv_diff_control.dir/src/odrive_endpoint.cpp.o[0m
+[5.705s] [ 66%] [32mBuilding CXX object CMakeFiles/agv_diff_control.dir/src/odrive_utils.cpp.o[0m
+[6.496s] In file included from [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/odrive_endpoint.cpp:1[m[K:
+[6.496s] [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/include/agv_proto/robot_hardware_interface_agv.hpp:36:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/base_interface.hpp: No such file or directory
+[6.496s]    36 | #include [01;31m[K"hardware_interface/base_interface.hpp"[m[K
+[6.497s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.497s] compilation terminated.
+[6.509s] gmake[2]: *** [CMakeFiles/agv_diff_control.dir/build.make:104: CMakeFiles/agv_diff_control.dir/src/odrive_endpoint.cpp.o] Error 1
+[6.509s] gmake[2]: *** Waiting for unfinished jobs....
+[6.580s] In file included from [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/include/agv_proto/odrive_utils.hpp:14[m[K,
+[6.586s]                  from [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/odrive_utils.cpp:1[m[K:
+[6.586s] [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/include/agv_proto/robot_hardware_interface_agv.hpp:36:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/base_interface.hpp: No such file or directory
+[6.587s]    36 | #include [01;31m[K"hardware_interface/base_interface.hpp"[m[K
+[6.587s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.587s] compilation terminated.
+[6.629s] gmake[2]: *** [CMakeFiles/agv_diff_control.dir/build.make:90: CMakeFiles/agv_diff_control.dir/src/odrive_utils.cpp.o] Error 1
+[6.817s] In file included from [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/robot_hardware_interface_agv.cpp:15[m[K:
+[6.818s] [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/include/agv_proto/robot_hardware_interface_agv.hpp:36:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/base_interface.hpp: No such file or directory
+[6.818s]    36 | #include [01;31m[K"hardware_interface/base_interface.hpp"[m[K
+[6.818s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.818s] compilation terminated.
+[6.860s] gmake[2]: *** [CMakeFiles/agv_diff_control.dir/build.make:76: CMakeFiles/agv_diff_control.dir/src/robot_hardware_interface_agv.cpp.o] Error 1
+[6.861s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/agv_diff_control.dir/all] Error 2
+[6.861s] gmake[1]: *** Waiting for unfinished jobs....
+[34.610s] [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/my_nav2_goal_client.cpp:[m[K In member function ‘[01m[Kvoid NavigateToPoseClient::sendGoal()[m[K’:
+[34.611s] [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/my_nav2_goal_client.cpp:38:91:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp_action::Client<nav2_msgs::action::NavigateToPose>::GoalResponseCallback[m[K’ {aka ‘[01m[Kstd::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>[m[K’} and ‘[01m[Kstd::_Bind_helper<false, void (NavigateToPoseClient::*)(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >), NavigateToPoseClient*, const std::_Placeholder<1>&>::type[m[K’)
+[34.611s]    38 |         std::bind(&NavigateToPoseClient::goalResponseCallback, this, std::placeholders::_1[01;31m[K)[m[K;
+[34.611s]       |                                                                                           [01;31m[K^[m[K
+[34.613s] In file included from [01m[K/usr/include/c++/11/future:47[m[K,
+[34.613s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[34.613s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[34.614s]                  from [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/my_nav2_goal_client.cpp:1[m[K:
+[34.614s] [01m[K/usr/include/c++/11/bits/std_function.h:530:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Functor> std::function<_Res(_ArgTypes ...)>::_Requires<std::function<_Res(_ArgTypes ...)>::_Callable<_Functor>, std::function<_Res(_ArgTypes ...)>&> std::function<_Res(_ArgTypes ...)>::operator=(_Functor&&) [with _Functor = _Functor; _Res = void; _ArgTypes = {std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >}][m[K’
+[34.614s]   530 |         [01;36m[Koperator[m[K=(_Functor&& __f)
+[34.614s]       |         [01;36m[K^~~~~~~~[m[K
+[34.614s] [01m[K/usr/include/c++/11/bits/std_function.h:530:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[34.620s] In file included from [01m[K/usr/include/c++/11/bits/move.h:57[m[K,
+[34.631s]                  from [01m[K/usr/include/c++/11/bits/stl_pair.h:59[m[K,
+[34.632s]                  from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[34.633s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[34.634s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[34.635s]                  from [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/my_nav2_goal_client.cpp:1[m[K:
+[34.636s] /usr/include/c++/11/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>&][m[K’:
+[34.636s] [01m[K/usr/include/c++/11/bits/std_function.h:353:8:[m[K   required by substitution of ‘[01m[Ktemplate<class _Res, class ... _ArgTypes> template<class _Cond, class _Tp> using _Requires = std::__enable_if_t<_Cond::value, _Tp> [with _Cond = std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>::_Callable<std::_Bind<void (NavigateToPoseClient::*(NavigateToPoseClient*, std::_Placeholder<1>))(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >)>, std::_Bind<void (NavigateToPoseClient::*(NavigateToPoseClient*, std::_Placeholder<1>))(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >)>, std::__invoke_result<std::_Bind<void (NavigateToPoseClient::*(NavigateToPoseClient*, std::_Placeholder<1>))(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >)>&, std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > > >; _Tp = std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>&; _Res = void; _ArgTypes = {std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >}][m[K’
+[34.636s] [01m[K/usr/include/c++/11/bits/std_function.h:530:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Functor> std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>::_Requires<std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>::_Callable<_Functor, typename std::enable_if<(! std::is_same<typename std::remove_cv<typename std::remove_reference<_Tp>::type>::type, std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)> >::value), std::decay<_Tp> >::type::type, std::__invoke_result<typename std::enable_if<(! std::is_same<typename std::remove_cv<typename std::remove_reference<_Tp>::type>::type, std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)> >::value), std::decay<_Tp> >::type::type&, std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > > >, std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>&> std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>::operator=<_Functor>(_Functor&&) [with _Functor = std::_Bind<void (NavigateToPoseClient::*(NavigateToPoseClient*, std::_Placeholder<1>))(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >)>][m[K’
+[34.637s] [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/my_nav2_goal_client.cpp:38:91:[m[K   required from here
+[34.637s] [01m[K/usr/include/c++/11/type_traits:2205:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>&>[m[K’
+[34.637s]  2205 |     using [01;31m[K__enable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+[34.638s]       |           [01;31m[K^~~~~~~~~~~~~[m[K
+[34.638s] In file included from [01m[K/usr/include/c++/11/future:47[m[K,
+[34.641s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[34.642s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[34.642s]                  from [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/my_nav2_goal_client.cpp:1[m[K:
+[34.642s] [01m[K/usr/include/c++/11/bits/std_function.h:540:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Functor> std::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::reference_wrapper<_Functor>) [with _Functor = _Functor; _Res = void; _ArgTypes = {std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >}][m[K’
+[34.643s]   540 |         [01;36m[Koperator[m[K=(reference_wrapper<_Functor> __f) noexcept
+[34.643s]       |         [01;36m[K^~~~~~~~[m[K
+[34.643s] [01m[K/usr/include/c++/11/bits/std_function.h:540:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[34.644s] [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/my_nav2_goal_client.cpp:38:91:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::_Bind<void (NavigateToPoseClient::*(NavigateToPoseClient*, std::_Placeholder<1>))(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >)>[m[K’ is not derived from ‘[01m[Kstd::reference_wrapper<_Tp>[m[K’
+[34.644s]    38 |         std::bind(&NavigateToPoseClient::goalResponseCallback, this, std::placeholders::_1[01;36m[K)[m[K;
+[34.644s]       |                                                                                           [01;36m[K^[m[K
+[34.645s] In file included from [01m[K/usr/include/c++/11/future:47[m[K,
+[34.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[34.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[34.645s]                  from [01m[K/home/x4/ros2_ws/src/example_project/agv_proto/src/my_nav2_goal_client.cpp:1[m[K:
+[34.646s] [01m[K/usr/include/c++/11/bits/std_function.h:469:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >}][m[K’
+[34.646s]   469 |       [01;36m[Koperator[m[K=(const function& __x)
+[34.646s]       |       [01;36m[K^~~~~~~~[m[K
+[34.647s] [01m[K/usr/include/c++/11/bits/std_function.h:469:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind_helper<false, void (NavigateToPoseClient::*)(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >), NavigateToPoseClient*, const std::_Placeholder<1>&>::type[m[K’ to ‘[01m[Kconst std::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>&[m[K’
+[34.647s]   469 |       operator=([01;36m[Kconst function& __x[m[K)
+[34.647s]       |                 [01;36m[K~~~~~~~~~~~~~~~~^~~[m[K
+[34.648s] [01m[K/usr/include/c++/11/bits/std_function.h:487:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >}][m[K’
+[34.648s]   487 |       [01;36m[Koperator[m[K=(function&& __x) noexcept
+[34.648s]       |       [01;36m[K^~~~~~~~[m[K
+[34.649s] [01m[K/usr/include/c++/11/bits/std_function.h:487:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind_helper<false, void (NavigateToPoseClient::*)(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >), NavigateToPoseClient*, const std::_Placeholder<1>&>::type[m[K’ to ‘[01m[Kstd::function<void(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >)>&&[m[K’
+[34.649s]   487 |       operator=([01;36m[Kfunction&& __x[m[K) noexcept
+[34.649s]       |                 [01;36m[K~~~~~~~~~~~^~~[m[K
+[34.650s] [01m[K/usr/include/c++/11/bits/std_function.h:501:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::nullptr_t) [with _Res = void; _ArgTypes = {std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> >}; std::nullptr_t = std::nullptr_t][m[K’
+[34.650s]   501 |       [01;36m[Koperator[m[K=(nullptr_t) noexcept
+[34.650s]       |       [01;36m[K^~~~~~~~[m[K
+[34.651s] [01m[K/usr/include/c++/11/bits/std_function.h:501:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind_helper<false, void (NavigateToPoseClient::*)(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose> > >), NavigateToPoseClient*, const std::_Placeholder<1>&>::type[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+[34.651s]   501 |       operator=([01;36m[Knullptr_t[m[K) noexcept
+[34.651s]       |                 [01;36m[K^~~~~~~~~[m[K
+[55.819s] gmake[2]: *** [CMakeFiles/my_nav2_goal_client.dir/build.make:76: CMakeFiles/my_nav2_goal_client.dir/src/my_nav2_goal_client.cpp.o] Error 1
+[55.819s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/my_nav2_goal_client.dir/all] Error 2
+[55.820s] gmake: *** [Makefile:146: all] Error 2
+[55.856s] Invoked command in '/home/x4/ros2_ws/src/build/agv_proto' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/agv_proto -- -j8 -l8

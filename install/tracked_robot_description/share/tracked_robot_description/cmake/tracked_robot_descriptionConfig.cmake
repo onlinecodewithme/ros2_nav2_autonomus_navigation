@@ -1,0 +1,1 @@
+/home/x4/ros2_ws/src/build/tracked_robot_description/ament_cmake_core/tracked_robot_descriptionConfig.cmake

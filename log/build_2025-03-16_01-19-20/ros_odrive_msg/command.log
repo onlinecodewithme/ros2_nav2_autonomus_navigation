@@ -1,0 +1,5 @@
+Invoking command in '/home/x4/ros2_ws/src/build/ros_odrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/ros_odrive_msg -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/ros_odrive_msg
+Invoked command in '/home/x4/ros2_ws/src/build/ros_odrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/x4/ros2_ws/src/example_project/ros_odrive_msg -DCMAKE_INSTALL_PREFIX=/home/x4/ros2_ws/src/install/ros_odrive_msg
+Invoking command in '/home/x4/ros2_ws/src/build/ros_odrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/ros_odrive_msg -- -j8 -l8
+Invoked command in '/home/x4/ros2_ws/src/build/ros_odrive_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/x4/ros2_ws/src/build/ros_odrive_msg -- -j8 -l8
+Invoking command in '/home/x4/ros2_ws/src/build/ros_odrive_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/x4/ros2_ws/src/build/ros_odrive_msg
