@@ -97,62 +97,81 @@ source install/setup.bash
 
 ### Hardware Operation
 
-To launch the complete robot stack on real hardware:
-
-```bash
-source ~/x4_autonomus/install/setup.bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav robot_complete.launch.py
-```
+All operations are now performed using the provided scripts in the `tracked_robot_nav/scripts` directory. These scripts handle the setup of the ROS environment and launching the appropriate nodes.
 
 #### Mapping with SLAM
 
-```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav mapping.launch.py
-```
-
-For mapping with ZED camera:
+To create a new map using SLAM:
 
 ```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav mapping_zed.launch.py
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/start_fresh_mapping.sh
 ```
+
+This script will launch the SLAM toolbox with the ZED camera for mapping.
 
 #### Autonomous Navigation
 
+To start autonomous navigation with an existing map:
+
 ```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav autonomous_nav.launch.py
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/start_autonomous_nav.sh
 ```
 
-#### Navigation with Existing Map
+This script will:
+1. Source the ROS 2 setup file
+2. Ask if you want to use RViz on a remote machine
+3. Launch the navigation stack with the ZED camera
+4. Start RViz for visualization and goal setting
+
+#### Testing Map Loading
+
+To test if a map loads correctly:
 
 ```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav navigation.launch.py map:=/path/to/map.yaml
-```
-
-#### Navigation with Keepout Zones
-
-```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav keepout_navigation.launch.py
-```
-
-#### Navigation with Speed Limits
-
-```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav speedlimit_navigation.launch.py
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/test_map_loading.sh
 ```
 
 #### Autonomous Exploration
 
+To start autonomous exploration of an unknown environment:
+
 ```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav exploration.launch.py
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/start_exploration.sh
 ```
+
+This script will launch the exploration nodes that automatically navigate the robot to explore and map unknown areas.
+
+#### Running RViz Separately
+
+If you need to run RViz separately:
+
+```bash
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/run_rviz_map.sh
+```
+
+#### Remote Visualization
+
+For setting up remote visualization:
+
+```bash
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/setup_ros_network.sh
+```
+
+This script will configure the ROS network for remote visualization and provide instructions for connecting from a remote machine.
+
+On the remote machine, use:
+
+```bash
+./run_rviz_remote.sh
+```
+
+(After copying it from the robot as instructed by the setup_ros_network.sh script)
 
 ### Simulation
 
@@ -258,11 +277,7 @@ To create a keepout zone map:
 3. Save the map as `map_keepout.pgm` in the `tracked_robot_nav/maps` directory
 4. Update the `map_keepout.yaml` file with the correct parameters
 
-To use keepout zones:
-```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav keepout_navigation.launch.py
-```
+To use keepout zones, modify the start_autonomous_nav.sh script to use the keepout map or create a custom script based on it.
 
 ### Speed Limits
 
@@ -274,11 +289,7 @@ To create a speed limit map:
 3. Save the map as `map_speedlimit.pgm` in the `tracked_robot_nav/maps` directory
 4. Update the `map_speedlimit.yaml` file with the correct parameters
 
-To use speed limits:
-```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav speedlimit_navigation.launch.py
-```
+To use speed limits, modify the start_autonomous_nav.sh script to use the speed limit map or create a custom script based on it.
 
 ### Autonomous Exploration
 
@@ -286,9 +297,11 @@ The autonomous exploration feature allows the robot to explore unknown environme
 
 To use autonomous exploration:
 ```bash
-export DISPLAY=:1
-ros2 launch tracked_robot_nav exploration.launch.py
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/start_exploration.sh
 ```
+
+This script will launch the exploration nodes that automatically navigate the robot to explore and map unknown areas.
 
 ## Saving and Loading Maps
 
@@ -298,11 +311,16 @@ To save a map created with SLAM:
 ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data: 'my_map'}}"
 ```
 
-The map will be saved in the current directory. To load a map for navigation:
+The map will be saved in the current directory. To load a map for navigation, use the start_autonomous_nav.sh script which will automatically load the default map. 
+
+To test if a map loads correctly:
 
 ```bash
-ros2 launch tracked_robot_nav navigation.launch.py map:=/path/to/my_map.yaml
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/test_map_loading.sh
 ```
+
+If you need to use a different map, you can modify the script or copy the map to the default location in tracked_robot_nav/maps/.
 
 ## Troubleshooting
 
