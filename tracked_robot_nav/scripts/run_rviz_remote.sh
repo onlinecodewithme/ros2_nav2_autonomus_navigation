@@ -34,7 +34,7 @@ echo "Starting RViz2 with $RVIZ_CONFIG configuration..."
 ros2 run rviz2 rviz2 -d ~/rviz_configs/$RVIZ_CONFIG
 
 # Note: You need to copy the RViz configuration files from the Jetson to your local machine:
-# scp user@jetson_ip:/home/x4/ros2_ws/src/tracked_robot_nav/config/*.rviz ~/rviz_configs/
+# scp user@jetson_ip:/home/x4/x4_autonomus/src/tracked_robot_nav/config/*.rviz ~/rviz_configs/
 #
 # If you want to visualize the map from the example project, make sure the map server is running
 # on the Jetson. The map server is started automatically when you run the start_fresh_mapping.sh,

@@ -84,11 +84,11 @@ For ZED SDK installation, follow the instructions at: https://www.stereolabs.com
 
 ```bash
 # Clone the repository (if not already done)
-cd ~/ros2_ws/src
+cd ~/x4_autonomus/src
 git clone <repository-url>
 
 # Build the packages
-cd ~/ros2_ws
+cd ~/x4_autonomus
 colcon build --symlink-install
 source install/setup.bash
 ```
@@ -100,7 +100,7 @@ source install/setup.bash
 To launch the complete robot stack on real hardware:
 
 ```bash
-source ~/ros2_ws/install/setup.bash
+source ~/x4_autonomus/install/setup.bash
 export DISPLAY=:1
 ros2 launch tracked_robot_nav robot_complete.launch.py
 ```

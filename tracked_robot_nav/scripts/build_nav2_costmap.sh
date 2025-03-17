@@ -7,7 +7,7 @@ echo "This script will build only the necessary Nav2 packages for costmap visual
 echo ""
 
 # Navigate to the workspace root
-cd /home/x4/ros2_ws
+cd /home/x4/x4_autonomus
 
 # Build only the necessary packages
 colcon build --packages-select nav2_costmap_2d nav2_map_server nav2_lifecycle_manager

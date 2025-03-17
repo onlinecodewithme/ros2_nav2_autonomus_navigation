@@ -34,7 +34,7 @@ sudo apt-get install -y \
 For the explore_lite package:
 
 ```bash
-cd ~/ros2_ws/src
+cd ~/x4_autonomus/src
 git clone https://github.com/robo-friends/m-explore-ros2.git
 cd ..
 colcon build --symlink-install --packages-select explore_lite
@@ -43,7 +43,7 @@ colcon build --symlink-install --packages-select explore_lite
 ## Building the Simulation
 
 ```bash
-cd ~/ros2_ws
+cd ~/x4_autonomus
 colcon build --symlink-install --packages-select tracked_robot_simulation
 source install/setup.bash
 ```

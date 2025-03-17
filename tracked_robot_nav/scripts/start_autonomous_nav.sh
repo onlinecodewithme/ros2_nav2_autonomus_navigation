@@ -2,6 +2,9 @@
 
 # Script to start autonomous navigation with ZED camera
 
+# Source the ROS 2 setup file
+source /home/x4/x4_autonomus/install/setup.bash
+
 echo "===== ZED Camera Autonomous Navigation ====="
 echo "This script launches the autonomous navigation stack with the ZED camera."
 echo "Make sure your robot is positioned correctly and a map is available."

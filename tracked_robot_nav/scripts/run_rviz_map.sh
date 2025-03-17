@@ -2,6 +2,9 @@
 
 # Script to run RViz with navigation configuration
 
+# Source the ROS 2 setup file
+source /home/x4/x4_autonomus/install/setup.bash
+
 echo "===== Running RViz with Navigation Configuration ====="
 echo "This script launches RViz with a configuration for navigation visualization."
 echo ""

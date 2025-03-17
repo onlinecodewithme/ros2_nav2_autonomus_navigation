@@ -38,4 +38,4 @@ fi
 echo ""
 echo "===== After mapping is complete ====="
 echo "Save your new map using:"
-echo "ros2 run nav2_map_server map_saver_cli -f ~/ros2_ws/src/tracked_robot_nav/maps/map"
+echo "ros2 run nav2_map_server map_saver_cli -f ~/x4_autonomus/src/tracked_robot_nav/maps/map"

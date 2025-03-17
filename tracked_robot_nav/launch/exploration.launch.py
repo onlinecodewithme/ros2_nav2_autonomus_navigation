@@ -29,12 +29,8 @@ def generate_launch_description():
     # Parameters
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     
-    # Check if the example map exists and use it if available
-    example_map_file = '/home/x4/ros2_ws/src/example_project/agv_proto/maps/my_home_map.yaml'
-    if os.path.exists(example_map_file):
-        map_yaml_file = LaunchConfiguration('map', default=example_map_file)
-    else:
-        map_yaml_file = LaunchConfiguration('map', default='')
+    # Use the map from tracked_robot_nav/maps
+    map_yaml_file = LaunchConfiguration('map', default=os.path.join(nav_dir, 'maps', 'map.yaml'))
     
     # Controller parameters
     controller_params = {
