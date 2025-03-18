@@ -136,14 +136,31 @@ cd ~/x4_autonomus/src
 
 #### Autonomous Exploration
 
-To start autonomous exploration of an unknown environment:
+To start autonomous exploration of an unknown environment (for mapping):
 
 ```bash
 cd ~/x4_autonomus/src
 ./tracked_robot_nav/scripts/start_exploration.sh
 ```
 
-This script will launch the exploration nodes that automatically navigate the robot to explore and map unknown areas.
+This script will launch the exploration nodes that automatically navigate the robot to explore and map unknown areas. This is useful for creating a map of an unknown environment.
+
+#### Deep Reinforcement Learning Navigation
+
+To navigate in an unknown environment without a pre-defined map:
+
+```bash
+cd ~/x4_autonomus/src
+./tracked_robot_nav/scripts/start_drl_navigation.sh
+```
+
+This script uses Deep Reinforcement Learning (specifically the TD3 algorithm) to navigate the robot to a target location while avoiding obstacles, without requiring a pre-defined map. The robot learns to make navigation decisions based on sensor data in real-time.
+
+Key features of DRL navigation:
+- No pre-defined map required
+- Real-time obstacle avoidance
+- Adaptive navigation in changing environments
+- Learning-based approach that improves with experience
 
 #### Running RViz Separately
 
